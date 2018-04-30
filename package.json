@@ -1,0 +1,13 @@
+{
+  "name": "bloq.io.vue",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "nuxt": "^1.4.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1"
+  }
+}

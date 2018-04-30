@@ -1,0 +1,7 @@
+/**
+ * Display the current year
+ */
+module.exports = () => {
+  const date = new Date();
+  return date.getFullYear();
+}

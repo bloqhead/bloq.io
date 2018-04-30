@@ -1,0 +1,44 @@
+//
+// Variables
+//
+
+// Paths
+$img-path: "../img";
+
+// Fonts
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$open-sans: "Open Sans", $sans-serif;
+$overpass-mono: "Overpass Mono", monospace;
+$heading-text: $overpass-mono;
+$road-rage: "Road Rage", $heading-text;
+
+// Colors
+$teal: #07eff3;
+$yellow: #eef46e;
+$red: #d70e2f;
+$lime: #8bd76b;
+$pink: #f54768;
+$light: #fff;
+$mid: #222;
+$shade: #555;
+$dark: #000;
+
+// Brand colors
+$github: #c6cbd1;
+$twitter: #1da1f2;
+
+// Breakpoints
+$bp-small: unquote("(min-width: 320px) and (max-width: 799px)");
+$bp-medium: unquote("(min-width: 800px)");
+$bp-medium-max: unquote("(max-width: 800px)");
+$bp-medium-large: unquote("(min-width: 992px)");
+$bp-medium-large-max: unquote("(max-width: 992px)");
+$bp-large: unquote("(min-width: 1200px)");
+
+// Misc
+$sidebar-padding: 1.25em;
+$sidebar-width: 14em;
+$content-width: calc( 100% - $sidebar-width );
+$grid-square: 2%;
+$radius: 5px;
+$panel-bg: rgba($mid, 0.5);
