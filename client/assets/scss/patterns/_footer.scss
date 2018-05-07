@@ -1,5 +1,59 @@
-footer {
-  position: relative;
-  top: 100%;
+//
+// Footer
+//
+
+.page-footer {
+  background-color: rgba($mid, 0.85);
+  font-family: $overpass-mono;
+  font-size: 0.8em;
   text-align: center;
+  color: $shade;
+  padding: $global-component-padding * 2;
+  margin: 0;
+
+  a {
+    text-decoration: underline;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.page-footer__content {
+
+}
+
+.page-footer__social {
+  @include list-reset;
+  text-transform: uppercase;
+
+  li, a {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: $soft-line;
+    padding: 0.5em 0;
+
+    &:hover {
+
+      svg path {
+        fill: white;
+      }
+    }
+  }
+
+  span {
+    margin-left: 0.5em;
+    letter-spacing: $char-spacing;
+  }
+}
+
+@media #{$bp-medium} {
+  .page-footer {
+    text-align: left;
+  }
 }

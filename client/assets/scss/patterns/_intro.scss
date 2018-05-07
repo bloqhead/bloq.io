@@ -1,3 +1,15 @@
-.intro {
+//
+// Intro
+//
 
+.intro {
+  background-color: rgba($mid, 0.85);
+  max-width: 25em;
+  font-size: 1.5em;
+  padding: $global-component-padding / 2;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }

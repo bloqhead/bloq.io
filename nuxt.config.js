@@ -7,7 +7,12 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Meta description' }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans|Overpass+Mono' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans|Overpass+Mono:400,700' }
+    ]
+  },
+  build: {
+    postcss: [
+      require('autoprefixer')(),
     ]
   },
   srcDir: 'client/'

@@ -10,7 +10,7 @@
 <script>
   export default {
     head: {
-      title: "About Me"
+      title: "Notes"
     }
   }
 </script>

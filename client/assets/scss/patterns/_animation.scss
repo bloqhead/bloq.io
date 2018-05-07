@@ -1,0 +1,39 @@
+//
+// Animation
+//
+
+// logo - bracket right
+@keyframes bracketRight {
+  from {
+    opacity: 0;
+    transform: translateX(0.5em) scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+// logo - bracket left
+@keyframes bracketLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-0.5em) scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+// logo - skate deck
+@keyframes skateDeck {
+  from {
+    opacity: 0;
+    transform: translateY(1em) rotate(-20deg)  scale(2);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg)  scale(1);
+  }
+}

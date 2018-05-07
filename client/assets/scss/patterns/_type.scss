@@ -23,32 +23,32 @@ a {
 }
 
 // Links - targeted
-a:not(.nav-item):not(.social-link):not(.logo):not(.work-grid__item-link):not(.badges__item-link):not(.burger):not(.menu__link) {
-  $base: $lime;
-  $active: $yellow;
-  $opacity: 0.25;
-  line-height: 1;
+// a:not(.nav-item):not(.social-link):not(.logo):not(.work-grid__item-link):not(.badges__item-link):not(.burger):not(.menu__link) {
+//   $base: $lime;
+//   $active: $yellow;
+//   $opacity: 0.25;
+//   line-height: 1;
 
-  &:hover, &:active {
+//   &:hover, &:active {
 
-    &:after {
-      background: rgba($active, $opacity * 1.5);
-      transform: scaleX(1);
-    }
-  }
+//     &:after {
+//       background: rgba($active, $opacity * 1.5);
+//       transform: scaleX(1);
+//     }
+//   }
 
-  &:after {
-    position: relative;
-    z-index: -1;
-    display: block;
-    content: "";
-    background: rgba($base, $opacity);
-    width: 100%;
-    height: 3px;
-    transform: scaleX(0.85);
-    transform-origin: center;
-  }
-}
+//   &:after {
+//     position: relative;
+//     z-index: -1;
+//     display: block;
+//     content: "";
+//     background: rgba($base, $opacity);
+//     width: 100%;
+//     height: 3px;
+//     transform: scaleX(0.85);
+//     transform-origin: center;
+//   }
+// }
 
 // Group styles
 h1, h2, h3, h4, h5, h6,
@@ -116,7 +116,10 @@ h6, .h6 {
 
 // Special styles
 .brush {
-  font-family: $road-rage;
+  font-family: $summer-hearts;
+  font-size: 12rem;
+  margin: 0;
+  padding: 0;
 }
 
 .title {
