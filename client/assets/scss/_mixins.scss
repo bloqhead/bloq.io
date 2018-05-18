@@ -98,4 +98,5 @@
 @mixin cleartext {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
 }
