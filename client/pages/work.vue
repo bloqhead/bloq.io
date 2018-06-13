@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 class="brush">Work.</h1>
+  <div class="page-content">
+    <h1 class="brush title">{{pageTitle}}</h1>
     <ul>
       <li v-for="project in projects">
         <h3>{{project.title}}</h3>
@@ -14,7 +14,7 @@
   export default {
     asyncData( context ) {
       return {
-        pageTitle: "Work",
+        pageTitle: "Work.",
         projects: [
           {
             title: "University of Tampa",
@@ -37,6 +37,7 @@
     },
     head: {
       title: "Work"
-    }
+    },
+    transition: 'slide-left'
   }
 </script>

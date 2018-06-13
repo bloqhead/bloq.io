@@ -34,6 +34,13 @@ body {
     $global-component-padding;
 }
 
+.page-content {
+  will-change: opacity, transform;
+  transition:
+    opacity .5s cubic-bezier(.55,0,.1,1),
+    transform .5s cubic-bezier(.55,0,.1,1);
+}
+
 @media #{$bp-medium} {
   .page-wrapper {
     position: relative;

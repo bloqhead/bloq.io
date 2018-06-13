@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-content">
     <h1 class="brush title">Hello.</h1>
 
     <div class="intro">
@@ -27,13 +27,9 @@
 
 <script>
   export default {
-    asyncData(context) {
-      return {
-        pageTitle: 'Home'
-      }
-    },
     head: {
-      title: "Homepage"
-    }
+      title: "Home"
+    },
+    transition: 'slide-left'
   }
 </script>

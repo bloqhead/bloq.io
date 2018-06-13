@@ -80,8 +80,8 @@
 </template>
 
 <script>
-  import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
   import brands from '@fortawesome/fontawesome-free-brands'
+  import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
 
   export default {
     components: {
