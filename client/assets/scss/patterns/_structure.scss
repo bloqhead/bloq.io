@@ -46,7 +46,6 @@ body {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr 1fr);
-    grid-template-rows: auto 2fr 0.5fr;
     grid-template-areas:
       "head head head head head head"
       ".... main main main main ...."

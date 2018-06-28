@@ -161,3 +161,17 @@ h6, .h6 {
     animation-delay: 0.1s;
   }
 }
+
+// lists
+
+.list {
+  font-size: 1.2em;
+  margin: 1.5em 0;
+}
+
+.list--cols {
+  
+  @media #{$bp-medium} {
+    columns: 2;
+  }
+}

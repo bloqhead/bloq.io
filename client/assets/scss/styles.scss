@@ -4,9 +4,6 @@
 
 @import "variables";
 @import "mixins";
-
-@import "/node_modules/normalize.css";
-
 @import "patterns/animation";
 @import "patterns/page-transitions";
 @import "patterns/logo";
@@ -18,5 +15,5 @@
 @import "patterns/header";
 @import "patterns/footer";
 @import "patterns/social";
-@import "patterns/intro";
-// @import "patterns/work";
+@import "patterns/helpers";
+@import "patterns/work";

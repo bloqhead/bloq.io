@@ -8,11 +8,13 @@
 
     <h2>It all started as a kid.</h2>
 
-    <p>Dad worked with computers (he worked on NASA spacecraft computers in a previous life before me) and he showed me the ropes. Eventually I was navigating <abbr title="Microsoft Disk Operating System">MS-DOS</abbr> like a champ. This, coupled with my artistic roots, eventually evolved into a graphic design career that gifted me with many interesting problems to solve.</p>
+    <p class="attn">Dad worked with computers (he worked on NASA spacecraft computers in a previous life before me) and he showed me the ropes. Eventually I was navigating <abbr title="Microsoft Disk Operating System">MS-DOS</abbr> like a champ.</p>
+    
+    <p>This, coupled with my artistic roots, eventually evolved into a graphic design career that gifted me with many interesting problems to solve.</p>
 
     <p>Along the way I also picked up some coding experience and directed my focus to front end development with some back end experience sprinkled in for good measure. I'm full-stack in every sense.</p>
 
-    <ul>
+    <ul class="list list--cols">
       <li><a href="https://sass-lang.com/">Sass</a></li>
       <li>JavaScript / ES6</li>
       <li>HTML5</li>
