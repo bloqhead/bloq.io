@@ -1,9 +1,9 @@
 <template>
   <div class="page-wrapper">
 
-    <div class="page-header">
+    <div class="page-header" itemscope itemtype="http://schema.org/Organization">
 
-      <nuxt-link to="/" class="logo-link" exact>
+      <nuxt-link to="/" class="logo-link" itemprop="url" exact>
         <svg id="logo" viewBox="0 0 312 283" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg">
           <style>
           .path {
@@ -30,7 +30,7 @@
         </svg>
       </nuxt-link>
 
-      <nav class="menu menu--main">
+      <nav class="menu menu--main" role="navigation">
         <ul>
           <li><nuxt-link to="/" exact>Home</nuxt-link></li>
           <li><nuxt-link to="work">Work</nuxt-link></li>
@@ -41,7 +41,7 @@
 
     </div>
 
-    <div class="content">
+    <div class="content" role="main">
       <nuxt />
     </div> <!-- .content -->
 
