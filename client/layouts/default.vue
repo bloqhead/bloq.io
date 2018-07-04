@@ -52,17 +52,17 @@
         <ul class="page-footer__social">
           <li>
             <a href="https://codepen.io/bloqhead">
-              <font-awesome-icon :icon="['far', 'codepen']" /> <span>Codepen</span>
+              <fa :icon="[ 'fab', 'codepen' ]" /> <span>Codepen</span>
             </a>
           </li>
           <li>
             <a href="https://twitter.com/bloqhead">
-              <font-awesome-icon :icon="['far', 'twitter']" /> <span>Twitter</span>
+              <fa :icon="[ 'fab', 'twitter' ]" /> <span>Twitter</span>
             </a>
           </li>
           <li>
             <a href="https://github.com/bloqhead">
-              <font-awesome-icon :icon="['far', 'github']" /> <span>Github</span>
+              <fa :icon="[ 'fab', 'github' ]" /> <span>Github</span>
             </a>
           </li>
         </ul>
@@ -78,20 +78,6 @@
 
   </div> <!-- .page-wrapper -->
 </template>
-
-<script>
-  import fontawesome from '@fortawesome/vue-fontawesome'
-
-  fontawesome.config = {
-    autoAddCss: false
-  }
-
-  export default {
-    components: {
-      fontawesome
-    }
-  }
-</script>
 
 <style lang="scss">
   @import "~/assets/scss/styles.scss";

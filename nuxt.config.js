@@ -22,6 +22,29 @@ module.exports = {
       }
     ]
   },
+  modules: [
+    ['nuxt-fontawesome', {
+      component: 'fa', 
+      imports: [
+        {
+          set: '@fortawesome/pro-light-svg-icons',
+          icons: ['fal']
+        },
+        {
+          set: '@fortawesome/pro-regular-svg-icons',
+          icons: ['far']
+        },
+        {
+          set: '@fortawesome/pro-solid-svg-icons',
+          icons: ['fas']
+        },
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: ['fab']
+        }
+      ]
+    }]
+  ],
   build: {
     postcss: [
       require('autoprefixer')(),
