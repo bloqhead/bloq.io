@@ -1,9 +1,9 @@
 <template>
   <div class="page-wrapper">
 
-    <div class="page-header">
+    <div class="page-header" itemscope itemtype="http://schema.org/Organization">
 
-      <nuxt-link to="/" class="logo-link" exact>
+      <nuxt-link to="/" class="logo-link" itemprop="url" exact>
         <svg id="logo" viewBox="0 0 312 283" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg">
           <style>
           .path {
@@ -30,7 +30,7 @@
         </svg>
       </nuxt-link>
 
-      <nav class="menu menu--main">
+      <nav class="menu menu--main" role="navigation">
         <ul>
           <li><nuxt-link to="/" exact>Home</nuxt-link></li>
           <li><nuxt-link to="work">Work</nuxt-link></li>
@@ -41,7 +41,7 @@
 
     </div>
 
-    <div class="content">
+    <div class="content" role="main">
       <nuxt />
     </div> <!-- .content -->
 
@@ -52,17 +52,17 @@
         <ul class="page-footer__social">
           <li>
             <a href="https://codepen.io/bloqhead">
-              <font-awesome-icon :icon="['far', 'codepen']" /> <span>Codepen</span>
+              <fa :icon="[ 'fab', 'codepen' ]" /> <span>Codepen</span>
             </a>
           </li>
           <li>
             <a href="https://twitter.com/bloqhead">
-              <font-awesome-icon :icon="['far', 'twitter']" /> <span>Twitter</span>
+              <fa :icon="[ 'fab', 'twitter' ]" /> <span>Twitter</span>
             </a>
           </li>
           <li>
             <a href="https://github.com/bloqhead">
-              <font-awesome-icon :icon="['far', 'github']" /> <span>Github</span>
+              <fa :icon="[ 'fab', 'github' ]" /> <span>Github</span>
             </a>
           </li>
         </ul>
@@ -78,20 +78,6 @@
 
   </div> <!-- .page-wrapper -->
 </template>
-
-<script>
-  import fontawesome from '@fortawesome/vue-fontawesome'
-
-  fontawesome.config = {
-    autoAddCss: false
-  }
-
-  export default {
-    components: {
-      fontawesome
-    }
-  }
-</script>
 
 <style lang="scss">
   @import "~/assets/scss/styles.scss";
