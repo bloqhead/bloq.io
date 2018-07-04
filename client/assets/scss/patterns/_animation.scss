@@ -72,3 +72,24 @@
   50% { transform: scale(1.5) }
   100% { transform: scale(0) }
 }
+
+// Animation helpers
+
+.anim--staggered {
+
+  > * {
+
+    @for $i from 1 through 20 {
+      &:nth-of-type(#{$i}) {
+        animation-delay: #{$i * 100}ms;
+      }
+    }
+  }
+}
+
+.anim--scale-up-in {
+
+    > * {
+      
+    }
+}
