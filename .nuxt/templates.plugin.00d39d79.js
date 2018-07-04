@@ -7,14 +7,14 @@ config.autoAddCss = false
 
   
   
-    import  { fal as fortawesomeprolightsvgicons_fal } from '@fortawesome/pro-light-svg-icons'
-    library.add(fortawesomeprolightsvgicons_fal)
+    import  { far as fortawesomeproregularsvgicons_far } from '@fortawesome/pro-regular-svg-icons'
+    library.add(fortawesomeproregularsvgicons_far)
   
 
   
   
-    import  { far as fortawesomeproregularsvgicons_far } from '@fortawesome/pro-regular-svg-icons'
-    library.add(fortawesomeproregularsvgicons_far)
+    import  { fal as fortawesomeprolightsvgicons_fal } from '@fortawesome/pro-light-svg-icons'
+    library.add(fortawesomeprolightsvgicons_fal)
   
 
   

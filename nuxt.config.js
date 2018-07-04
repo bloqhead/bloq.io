@@ -27,12 +27,12 @@ module.exports = {
       component: 'fa', 
       imports: [
         {
-          set: '@fortawesome/pro-light-svg-icons',
-          icons: ['fal']
-        },
-        {
           set: '@fortawesome/pro-regular-svg-icons',
           icons: ['far']
+        },
+        {
+          set: '@fortawesome/pro-light-svg-icons',
+          icons: ['fal']
         },
         {
           set: '@fortawesome/pro-solid-svg-icons',

@@ -12,14 +12,6 @@
   opacity: 0
 }
 
-.bounce-enter-active {
-  animation: bounce-in .8s;
-}
-
-.bounce-leave-active {
-  animation: bounce-out .5s;
-}
-
 .slide-left-enter,
 .slide-right-leave-active {
   opacity: 0;

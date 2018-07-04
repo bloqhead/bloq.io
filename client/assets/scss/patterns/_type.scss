@@ -175,3 +175,16 @@ h6, .h6 {
     columns: 2;
   }
 }
+
+// Content extras
+
+hr {
+  display: block;
+  clear: both;
+  height: 0;
+  width: 100%;
+  background: none;
+  margin: 6rem auto;
+  border: 0;
+  border-bottom: 2px dotted $pink;
+}
