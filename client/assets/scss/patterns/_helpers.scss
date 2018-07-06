@@ -14,7 +14,7 @@
 
 .intro {
   background-color: rgba($mid, 0.85);
-  max-width: 25em;
+  max-width: 35em;
   font-size: 1.5em;
   padding: $global-component-padding / 2;
   margin: 0 0 3.5em 0;
@@ -63,6 +63,11 @@
     transform: translate(0.65rem,0.65rem);
   }
 
+  @media (max-width: 639px) {
+    margin: 3rem auto;
+    max-width: 250px;
+  }
+
   @media (min-width: 640px) {
     flex: 2;
     transform: translateX(-5rem);
@@ -98,6 +103,13 @@
   }
 }
 
+.flex-well--padded-items {
+
+  > * {
+    margin: 2rem;
+  }
+}
+
 .mt--sm {
   margin-top: 3rem;
 }
@@ -120,4 +132,14 @@
 
 .mb--xl {
   margin-bottom: 12rem;
+}
+
+@each $color, $name in $colors-brand {
+  .color--#{$name} {
+    color: $color;
+  }
+
+  .bg--#{$name} {
+    background-color: $color;
+  }
 }

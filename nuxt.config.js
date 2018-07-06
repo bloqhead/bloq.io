@@ -45,6 +45,9 @@ module.exports = {
       ]
     }]
   ],
+  loading: {
+    color: '#8bd76b'
+  },
   build: {
     postcss: [
       require('autoprefixer')(),

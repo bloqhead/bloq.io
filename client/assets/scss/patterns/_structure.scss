@@ -13,10 +13,15 @@ html {
 body {
   min-height: 100vh;
   color: white;
-  font: normal 1.6em/2 $open-sans;
+  font: normal 1.3em/1.5 $open-sans;
   background-color: black;
   background-image: url($topography);
   background-attachment: fixed;
+
+  @media #{$bp-medium} {
+    font-size: 1.6em;
+    line-height: 2;
+  }
 }
 
 // Template structure

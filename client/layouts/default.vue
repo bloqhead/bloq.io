@@ -3,8 +3,8 @@
 
     <div class="page-header" itemscope itemtype="http://schema.org/Organization">
 
-      <nuxt-link to="/" class="logo-link" itemprop="url" exact>
-        <svg id="logo" viewBox="0 0 312 283" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg">
+      <nuxt-link to="/" exact class="logo-link" itemprop="url">
+        <svg itemprop="logo" id="logo" viewBox="0 0 312 283" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg">
           <style>
           .path {
             fill: none;
@@ -33,9 +33,8 @@
       <nav class="menu menu--main" role="navigation">
         <ul>
           <li><nuxt-link to="/" exact>Home</nuxt-link></li>
-          <li><nuxt-link to="work">Work</nuxt-link></li>
-          <li><nuxt-link to="about">About</nuxt-link></li>
-          <li><nuxt-link to="notes">Notes</nuxt-link></li>
+          <li><nuxt-link to="/work/">Work</nuxt-link></li>
+          <li><nuxt-link to="/notes/">Notes</nuxt-link></li>
         </ul>
       </nav>
 
@@ -70,6 +69,9 @@
         <div class="page-footer__copyright">
           <p>&copy; Daryn St. Pierre</p>
           <p>Built with <a href="https://nuxtjs.org/">Nuxt</a>. Hosted by <a href="https://zeit.co/">Zeit</a>.</p>
+          <p>
+            <fa :icon="['fal', 'envelope']" /> daryniscool [at] gmail.com
+          </p>
         </div>
 
       </div>

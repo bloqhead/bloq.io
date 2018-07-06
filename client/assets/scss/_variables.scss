@@ -34,17 +34,41 @@ $mid: #222;
 $shade: #555;
 $dark: #000;
 
-$colors: (
+// Brand colors
+$github: #c6cbd1;
+$twitter: #1da1f2;
+$html5: #e34f26;
+$sass: #cf649a;
+$js: #f0db4f;
+$php: #777bb3;
+$vue: #41b883;
+
+// site color array
+$colors-site: (
   $teal
   $yellow
   $red
   $lime
   $pink
+  $github
+  $twitter
+  $html5
+  $sass
+  $js
+  $php
+  $vue
 );
 
-// Brand colors
-$github: #c6cbd1;
-$twitter: #1da1f2;
+// brand color array
+$colors-brand: (
+  ( $github   'github' ),
+  ( $twitter  'twitter' ),
+  ( $html5    'html5' ),
+  ( $sass     'sass' ),
+  ( $js       'js' ),
+  ( $php      'php' ),
+  ( $vue      'vue' )
+);
 
 // Breakpoints
 $bp-small: unquote("(min-width: 320px) and (max-width: 799px)");

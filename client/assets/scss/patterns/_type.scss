@@ -166,7 +166,26 @@ h6, .h6 {
 
 .list {
   font-size: 1.2em;
+  padding: 0;
   margin: 1.5em 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding: 0 0 0 1.5rem;
+
+    &:before {
+      $i: 6px;
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: $i solid transparent;
+      border-bottom: $i solid transparent;
+      border-left: $i solid $pink;
+      transform: translateX(-1.2rem);
+    }
+  }
 }
 
 .list--cols {
