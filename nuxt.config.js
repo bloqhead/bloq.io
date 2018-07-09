@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'spa',
   head: {
     titleTemplate: '%s | Daryn St. Pierre - Front-End Web Developer',
     meta: [
