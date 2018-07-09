@@ -24,9 +24,6 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/sitemap',
-    // ['@nuxtjs/localtunnel', {
-    //   subdomain: 'bloq'
-    // }],
     ['@nuxtjs/google-analytics', {
       id: 'UA-2478113-11'
     }],
