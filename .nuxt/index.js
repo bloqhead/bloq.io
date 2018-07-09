@@ -5,7 +5,7 @@ import { createRouter } from './router.js'
 import NoSSR from './components/no-ssr.js'
 import NuxtChild from './components/nuxt-child.js'
 import NuxtLink from './components/nuxt-link.js'
-import NuxtError from './components/nuxt-error.vue'
+import NuxtError from '../client/layouts/error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData } from './utils'
@@ -13,6 +13,7 @@ import { setContext, getLocation, getRouteData } from './utils'
 
 /* Plugins */
 import nuxt_plugin_templatesplugin00d39d79_1972471e from 'nuxt_plugin_templatesplugin00d39d79_1972471e' // Source: ./templates.plugin.00d39d79.js
+import nuxt_plugin_googleanalytics_0676875c from 'nuxt_plugin_googleanalytics_0676875c' // Source: ./google-analytics.js (ssr: false)
 
 
 // Component: <no-ssr>
@@ -136,6 +137,9 @@ async function createApp (ssrContext) {
   
   if (typeof nuxt_plugin_templatesplugin00d39d79_1972471e === 'function') await nuxt_plugin_templatesplugin00d39d79_1972471e(app.context, inject)
   
+  if (process.browser) { 
+    if (typeof nuxt_plugin_googleanalytics_0676875c === 'function') await nuxt_plugin_googleanalytics_0676875c(app.context, inject)
+  }
 
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {

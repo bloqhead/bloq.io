@@ -16,6 +16,14 @@
   padding: $global-component-padding ($global-component-padding * 2);
 }
 
+@media (max-width: 799px) {
+  .logo-link {
+    max-width: 30%;
+    min-width: 80px;
+    margin: 0 auto;
+  }
+}
+
 @media #{$bp-medium} {
   .page-header {
     display: grid;

@@ -8,11 +8,13 @@
 
     <ul class="project-list">
       
-      <li v-for="project in projects" class="project-list__item">
-        <a v-bind:href="project.url" class="project-list__link">
-          <img v-bind:src="project.image" v-bind:alt="'A screenshot of the ' + project.title + ' project'" class="project-list__item-image">
+      <li itemscope itemtype="http://schema.org/CreativeWork" v-for="project in projects" class="project-list__item">
+        <a itemprop="url" v-bind:href="project.url" class="project-list__link">
+
+          <img v-bind:src="project.image" v-bind:alt="'A screenshot of the ' + project.title + ' project'" class="project-list__item-image"> <!-- .project-list__item-image -->
+
           <div class="project-list__item-content">
-            <h3 class="project-list__item-title angle-forward">
+            <h3 itemprop="headline" class="project-list__item-title angle-forward">
               <div class="angle-reverse">
                 {{project.title}}
               </div>
@@ -22,9 +24,10 @@
                 View Site <fa :icon="[ 'far', 'arrow-right' ]" />
               </div>
             </div>
-          </div>
+          </div> <!-- .project-list__item-content -->
+
         </a>
-      </li>
+      </li> <!-- .project-list__item -->
 
     </ul>
 
@@ -48,7 +51,7 @@
             image: require("~/static/work/the-brewery-bay.png")
           },
           {
-            title: "Mote Marine Laboratory & Aquarium",
+            title: "Mote",
             url: "https://mote.org/",
             image: require("~/static/work/mote.png")
           },
@@ -66,7 +69,14 @@
       }
     },
     head: {
-      title: "Work"
+      title: 'Work',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'A selection of web development projects I have worked on.'
+        }
+      ]
     },
     transition: 'slide-left'
   }

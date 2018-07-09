@@ -47,11 +47,18 @@
   export default {
     asyncData( context ) {
       return {
-        pageTitle: "Versatile."
+        pageTitle: 'Versatile.'
       }
     },
     head: {
-      title: "Home"
+      title: 'Home',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.'
+        }
+      ]
     },
     transition: 'slide-left'
   }

@@ -2,7 +2,22 @@
 // Styles
 //
 
+// variables
 @import "variables";
+
+// vendor
+@import "vendor/minireset";
+
+$hamburger-layer-width: 40px;
+$hamburger-layer-height: 4px;
+$hamburger-layer-spacing: 8px;
+$hamburger-layer-border-radius: 2px;
+$hamburger-types: (collapse, collapse-r);
+$hamburger-layer-color: $lime;
+
+@import "vendor/hamburgers/hamburgers";
+
+// patterns
 @import "mixins";
 @import "patterns/bootstrapper";
 @import "patterns/animation";
@@ -10,8 +25,8 @@
 @import "patterns/logo";
 @import "patterns/structure";
 @import "patterns/type";
-@import "patterns/brand";
 @import "patterns/menu";
+@import "patterns/forms";
 @import "patterns/nuxt";
 @import "patterns/header";
 @import "patterns/footer";

@@ -8,20 +8,28 @@ html, body {
 
 html {
   font-size: 62.5%;
+
+  &.has-active-menu {
+    overflow: hidden !important;
+  }
 }
 
 body {
   min-height: 100vh;
   color: white;
-  font: normal 1.3em/1.5 $open-sans;
+  font-weight: normal;
+  line-height: 2;
+  font-family: $open-sans;
   background-color: black;
   background-image: url($topography);
   background-attachment: fixed;
 
-  @media #{$bp-medium} {
-    font-size: 1.6em;
-    line-height: 2;
-  }
+  $min_width: 320px;
+  $max_width: 1140px;
+  $min_font: 13px;
+  $max_font: 16px;
+
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
 
 // Template structure
@@ -46,15 +54,8 @@ body {
     transform .5s cubic-bezier(.55,0,.1,1);
 }
 
-@media #{$bp-medium} {
+@media (min-width: 1140px) {
   .page-wrapper {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr 1fr);
-    grid-template-areas:
-      "head head head head head head"
-      ".... main main main main ...."
-      "foot foot foot foot foot foot";
 
     &:before {
       position: absolute;
@@ -72,6 +73,18 @@ body {
       color: $shade;
       @include cleartext;
     }
+  }
+}
+
+@media #{$bp-medium} {
+  .page-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr 1fr);
+    grid-template-areas:
+      "head head head head head head"
+      ".... main main main main ...."
+      "foot foot foot foot foot foot";
   }
 
   .page-title {
