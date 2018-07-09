@@ -72,7 +72,6 @@ module.exports = {
     }]
   ],
   loadingIndicator: {
-    name: 'nuxt',
     color: '#8bd76b',
     background: '#000'
   },
