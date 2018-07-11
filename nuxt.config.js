@@ -1,5 +1,4 @@
 module.exports = {
-  mode: 'spa',
   head: {
     titleTemplate: '%s | Daryn St. Pierre - Front-End Web Developer',
     meta: [
@@ -14,12 +13,14 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content: 'Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.'
-      }
-    ],
-    link: [
+      },
       {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Open+Sans:Open+Sans:400,400i,700,700i|Overpass+Mono:400,700'
+        link: [
+          {
+            rel: 'stylesheet',
+            href: 'https://fonts.googleapis.com/css?family=Open+Sans:Open+Sans:400,400i,700,700i|Overpass+Mono:400,700'
+          }
+        ]
       }
     ]
   },
@@ -41,32 +42,24 @@ module.exports = {
       masterPicture: 'client/static/icon.png'
     }],
     ['nuxt-fontawesome', {
-      component: 'fa', 
+      component: 'fa',
       imports: [
-        {
-          set: '@fortawesome/pro-regular-svg-icons',
-          icons: [
-            'faArrowRight'
-          ]
-        },
-        {
-          set: '@fortawesome/pro-light-svg-icons',
-          icons: [
-            'faEnvelope'
-          ]
-        },
         {
           set: '@fortawesome/free-brands-svg-icons',
           icons: [
-            'faGithub',
             'faCodepen',
             'faTwitter',
+            'faGithub',
             'faHtml5',
             'faSass',
-            'faJs',
             'faPhp',
+            'faJs',
             'faVuejs'
           ]
+        },
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: [ 'faEnvelope', 'faArrowRight' ]
         }
       ]
     }]
@@ -83,7 +76,7 @@ module.exports = {
   },
   build: {
     postcss: [
-      require('autoprefixer')(),
+      require('autoprefixer')()
     ]
   },
   srcDir: 'client/'

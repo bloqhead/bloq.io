@@ -24,7 +24,7 @@
         <p>&copy; Daryn St. Pierre</p>
         <p>Built with <a href="https://nuxtjs.org/">Nuxt</a>. Hosted by <a href="https://zeit.co/">Zeit</a>.</p>
         <p>
-          <fa :icon="['fal', 'envelope']" /> daryniscool [at] gmail.com
+          <fa :icon="[ 'fas', 'envelope' ]" /> daryniscool [at] gmail.com
         </p>
       </div>
 

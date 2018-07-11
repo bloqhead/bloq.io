@@ -4,4 +4,4 @@
 .sass-cache/
 .nuxt/
 dist/
-.npmrc
+now.json

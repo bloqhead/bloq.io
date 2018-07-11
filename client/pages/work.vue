@@ -21,7 +21,7 @@
             </h3>
             <div class="project-list__item-faux-link angle-reverse">
               <div class="angle-forward">
-                View Site <fa :icon="[ 'far', 'arrow-right' ]" />
+                View Site <fa :icon="[ 'fa', 'arrow-right' ]" />
               </div>
             </div>
           </div> <!-- .project-list__item-content -->
