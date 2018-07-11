@@ -56,7 +56,9 @@ export default {
     /** handle the menu closing on menu item click */
     Array.from(menuItems).forEach( (el) => {
       el.addEventListener('click', (el) => {
+        button.classList.toggle('is-active')
         menu.classList.remove('is-active')
+        dom.classList.remove('has-active-menu')
       })
     })
   }
