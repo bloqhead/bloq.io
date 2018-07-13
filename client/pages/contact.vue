@@ -2,11 +2,11 @@
   <div class="page-content">
     <h1 class="brush title">{{pageTitle}}</h1>
 
-    <!-- <div class="intro">
-      <p>Drop me a line.</p>
-    </div> -->
+    <div class="intro">
+      <p>If you want to drop me a line to ask a question or just say hi, you can email me at daryniscool [at] gmail.com. I'll try to respond in a day or two.</p>
+    </div>
 
-    <form @submit.prevent="handleSubmit" novalidate class="flex-form">
+    <!-- <form @submit.prevent="handleSubmit" novalidate class="flex-form">
       <div class="form-field flex-form__col-half">
         <label for="name" class="sr-only">What's your name?</label>
         <input type="text" placeholder="What's your name?" id="name" v-model="user.name">
@@ -24,7 +24,7 @@
           Send <fa :icon="[ 'far', 'arrow-right' ]" />
         </button>
       </div>
-    </form>
+    </form> -->
 
   </div>
 </template>
@@ -33,17 +33,7 @@
   export default {
     asyncData( context ) {
       return {
-        pageTitle: 'Hello.',
-        user: {
-          name: '',
-          email: '',
-          comments: ''
-        }
-      }
-    },
-    methods: {
-      handleSubmit() {
-        console.log("form button clicked");
+        pageTitle: 'Hello.'
       }
     },
     head: {

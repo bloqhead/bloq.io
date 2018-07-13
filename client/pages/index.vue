@@ -2,15 +2,15 @@
   <div class="page-content">
     <h1 class="brush title">{{pageTitle}}</h1>
 
-    <div class="intro">
-      <p>My name is <span itemprop="givenName">Daryn</span> and I build <a href="https://bigsea.co/work/">websites</a>
-      in sunny St. Petersburg Florida. I like to experiment on <a href="https://codepen.io/bloqhead">Codepen</a> and have been featured on the front page multiple times, as well as in <a href="https://codepen.io/spark/">Codepen Spark</a>.</p>
-    </div>
-
     <div itemscope itemtype="https://schema.org/Person" class="intro intro--has-image">
       <div class="intro__image">
         <img itemprop="photo" src="~/static/me.jpg" alt="A picture of Daryn smiling while wearing a comfy hoodie">
       </div>
+      <p>My name is <span itemprop="givenName">Daryn</span> and I build <a href="https://bigsea.co/work/">websites</a>
+      in sunny St. Petersburg Florida. I like to experiment on <a href="https://codepen.io/bloqhead">Codepen</a> and have been featured on the front page multiple times, as well as in <a href="https://codepen.io/spark/">Codepen Spark</a>.</p>
+    </div>
+
+    <div class="intro">
       <p>Design, code, <abbr title="User Experience">UX</abbr>/<abbr title="User Interface">UI</abbr>, accessibility, client relations; I do it all. I've been in the game since circa 2001 and don't plan on going anywhere.</p>
     </div>
 

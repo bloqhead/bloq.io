@@ -143,3 +143,13 @@
     background-color: $color;
   }
 }
+
+@each $color, $name in $colors-site-named {
+  .color--#{$name} {
+    color: $color;
+  }
+
+  .bg--#{$name} {
+    background-color: $color;
+  }
+}

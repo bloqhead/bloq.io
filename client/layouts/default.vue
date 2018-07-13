@@ -45,7 +45,7 @@ export default {
       if( expanded == 'false' ) {
         expanded = 'true'
       }
-      else if( expanded = 'true' ) {
+      else if( expanded == 'true' ) {
         expanded = 'false'
       }
 
@@ -56,7 +56,7 @@ export default {
     /** handle the menu closing on menu item click */
     Array.from(menuItems).forEach( (el) => {
       el.addEventListener('click', (el) => {
-        button.classList.toggle('is-active')
+        button.classList.remove('is-active')
         menu.classList.remove('is-active')
         dom.classList.remove('has-active-menu')
       })
@@ -64,7 +64,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-  @import "~/assets/scss/styles.scss";
-</style>

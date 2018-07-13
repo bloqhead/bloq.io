@@ -41,12 +41,11 @@
   a {
     padding: 0.5em 1.5em;
 
-    &:hover, &:focus {
+    &:hover {
       color: #fff;
 
       @media #{$bp-medium} {
         &:after {
-          background-color: #fff !important;
           transform: scaleX(0.5) scaleY(1);
         }
       }
@@ -80,7 +79,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba($mid, .96);
-    font-size: 3rem;
+    font-size: 4.5rem;
     opacity: 0;
     visibility: hidden;
     will-change: transform, opacity, visibility;
@@ -101,7 +100,7 @@
 
       @for $i from 1 through 3 {
         &:nth-of-type(#{$i}) {
-          transition-delay: #{$i * 120}ms;
+          transition-delay: #{$i * 180}ms;
         }
       }
     }

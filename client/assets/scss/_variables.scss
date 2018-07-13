@@ -50,13 +50,15 @@ $colors-site: (
   $red
   $lime
   $pink
-  $github
-  $twitter
-  $html5
-  $sass
-  $js
-  $php
-  $vue
+);
+
+// site color named array
+$colors-site-named: (
+  ( $teal 'teal' ),
+  ( $yellow 'yellow' ),
+  ( $red 'red' ),
+  ( $lime 'lime' ),
+  ( $pink 'pink' )
 );
 
 // brand color array

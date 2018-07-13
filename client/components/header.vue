@@ -46,7 +46,7 @@
       <ul>
         <li><nuxt-link to="/" exact tabindex="1">Home</nuxt-link></li>
         <li><nuxt-link to="/work/" tabindex="2">Work</nuxt-link></li>
-        <!-- <li><nuxt-link to="/contact/" tabindex="3">Contact</nuxt-link></li> -->
+        <li><nuxt-link to="/contact/" tabindex="3">Hello</nuxt-link></li>
       </ul>
     </nav>
 

@@ -18,12 +18,18 @@ module.exports = {
         link: [
           {
             rel: 'stylesheet',
-            href: 'https://fonts.googleapis.com/css?family=Open+Sans:Open+Sans:400,400i,700,700i|Overpass+Mono:400,700'
+            href: '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Overpass+Mono:400,700'
           }
         ]
       }
     ]
   },
+  css: [
+    {
+      src: '~/assets/scss/styles.scss',
+      lang: 'scss'
+    }
+  ],
   modules: [
     '@nuxtjs/sitemap',
     ['@nuxtjs/google-analytics', {
@@ -59,7 +65,11 @@ module.exports = {
         },
         {
           set: '@fortawesome/free-solid-svg-icons',
-          icons: [ 'faEnvelope', 'faArrowRight' ]
+          icons: [
+            'faEnvelope',
+            'faArrowRight',
+            'faCode'
+          ]
         }
       ]
     }]
@@ -76,7 +86,9 @@ module.exports = {
   },
   build: {
     postcss: [
-      require('autoprefixer')()
+      require('autoprefixer')({
+        grid: true
+      })
     ]
   },
   srcDir: 'client/'
