@@ -9,7 +9,7 @@
     <ul class="project-list">
       
       <li itemscope itemtype="http://schema.org/CreativeWork" v-for="project in projects" class="project-list__item">
-        <a itemprop="url" v-bind:href="project.url" class="project-list__link">
+        <a itemprop="url" rel="noindex nofollow" v-bind:href="project.url" class="project-list__link">
 
           <img v-bind:src="project.image" v-bind:alt="'A screenshot of the ' + project.title + ' project'" class="project-list__item-image"> <!-- .project-list__item-image -->
 

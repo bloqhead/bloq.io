@@ -4,51 +4,17 @@
 
 // Links - base
 a {
-  $base: $lime;
-  $active: $yellow;
-  $opacity: 0.25;
-
-  position: relative;
-  display: inline-block;
-  color: $base;
-  text-decoration: none;
+  color: $lime;
+  text-decoration: underline;
 
   &, &:after {
     transition: all 0.2s ease;
   }
 
-  &:hover, &:active {
-    color: $active;
+  &:hover {
+    color: $yellow;
   }
 }
-
-// Links - targeted
-// a:not(.nav-item):not(.social-link):not(.logo):not(.work-grid__item-link):not(.badges__item-link):not(.burger):not(.menu__link) {
-//   $base: $lime;
-//   $active: $yellow;
-//   $opacity: 0.25;
-//   line-height: 1;
-
-//   &:hover, &:active {
-
-//     &:after {
-//       background: rgba($active, $opacity * 1.5);
-//       transform: scaleX(1);
-//     }
-//   }
-
-//   &:after {
-//     position: relative;
-//     z-index: -1;
-//     display: block;
-//     content: "";
-//     background: rgba($base, $opacity);
-//     width: 100%;
-//     height: 3px;
-//     transform: scaleX(0.85);
-//     transform-origin: center;
-//   }
-// }
 
 // Group styles
 h1, h2, h3, h4, h5, h6,
