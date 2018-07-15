@@ -11,16 +11,18 @@
     </div>
 
     <div class="intro">
-      <p>Design, code, <abbr title="User Experience">UX</abbr>/<abbr title="User Interface">UI</abbr>, accessibility, client relations; I do it all. I've been in the game since circa 2001 and don't plan on going anywhere.</p>
+      <p>Design, code, <abbr title="User Experience">UX</abbr>/<abbr title="User Interface">UI</abbr>, accessibility, client relations; I do it all. I've been in the game since circa 2001 and refuse to stop learning.</p>
     </div>
 
     <h2>It all started as a kid.</h2>
 
-    <p class="attn">Dad worked with computers (he worked on NASA spacecraft computers in a previous life before me) and he showed me the ropes. Eventually I was navigating <abbr title="Microsoft Disk Operating System">MS-DOS</abbr> like a champ.</p>
+    <p class="attn">I was heavily influenced by 80s and 90s culture, as well as my computer-savvy father. Before I was born, he was a contractor for NASA and worked on computer systems that were used in space capsules. With his guidance, I was eventually navigating <abbr title="Microsoft Disk Operating System">MS-DOS</abbr> like a pro. The stuffed Cacodemon on my desk gives away my childhood era.</p>
     
-    <p>This, coupled with my artist roots, eventually evolved into a graphic design career that gifted me with many interesting experiences and problems to solve.</p>
+    <p>This upbringing, coupled with my artistic roots (and a couple failed art school attempts), eventually evolved into a graphic design career that gifted me with many interesting experiences and problems to solve.</p>
 
-    <p>Along the way I also picked up some coding experience and directed my focus to front end development with some back end experience sprinkled in for good measure. I'm full-stack in every sense and even have some sysadmin skills to boot. I've been around the block a few times.</p>
+    <p>Along the way I also picked up some coding experience and directed my focus to front end development with some back end experience sprinkled in for good measure. I'm full-stack in every sense and even have some sysadmin skills to boot (I used to manage an Apache webserver with ~70 websites). Don't let the baby face deceive you; I've been in the scene for a while.</p>
+
+    <h3>I build things with&hellip;</h3>
 
     <div class="flex-well flex-well--auto flex-well--padded-items align--center mt--sm mb--sm">
       <fa :icon="[ 'fab', 'html5' ]" class="fa-7x color--html5" />
