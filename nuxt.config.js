@@ -14,14 +14,12 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content: 'Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.'
-      },
+      }
+    ],
+    link: [
       {
-        link: [
-          {
-            rel: 'stylesheet',
-            href: '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Overpass+Mono:400,700'
-          }
-        ]
+        rel: 'stylesheet',
+        href: '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Overpass+Mono:400,700'
       }
     ]
   },
