@@ -27,7 +27,8 @@ body {
   $min_width: 320px;
   $max_width: 1140px;
   $min_font: 13px;
-  $max_font: 18px;
+  $max_font: 16px;
+  // $max_font: 18px;
 
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
@@ -52,6 +53,13 @@ body {
   transition:
     opacity .5s cubic-bezier(.55,0,.1,1),
     transform .5s cubic-bezier(.55,0,.1,1);
+}
+
+.page-footer__email-link {
+  
+  > svg {
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: 1140px) {

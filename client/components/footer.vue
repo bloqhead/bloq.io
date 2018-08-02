@@ -9,22 +9,27 @@
           </a>
         </li>
         <li>
+          <a href="https://github.com/bloqhead">
+            <fa :icon="[ 'fab', 'github' ]" /> <span>Github</span>
+          </a>
+        </li>
+        <li>
           <a href="https://twitter.com/bloqhead">
             <fa :icon="[ 'fab', 'twitter' ]" /> <span>Twitter</span>
           </a>
         </li>
         <li>
-          <a href="https://github.com/bloqhead">
-            <fa :icon="[ 'fab', 'github' ]" /> <span>Github</span>
+          <a href="https://instagram.com/karmapizza">
+            <fa :icon="[ 'fab', 'instagram' ]" /> <span>Instagram</span>
           </a>
         </li>
       </ul>
 
       <div class="page-footer__copyright">
-        <p>&copy; Daryn St. Pierre</p>
+        <p>&copy; {{ new Date().getFullYear() }} Daryn St. Pierre</p>
         <p>Built with <a href="https://nuxtjs.org/">Nuxt</a>. Hosted by <a href="https://zeit.co/">Zeit</a>.</p>
-        <p>
-          <fa :icon="[ 'fa', 'envelope' ]" /> daryniscool [at] gmail.com
+        <p class="page-footer__email-link">
+          <fa :icon="[ 'fa', 'envelope' ]" /> <a href="mailto:daryniscool@gmail.com">daryniscool@gmail.com</a>
         </p>
       </div>
 

@@ -2,7 +2,15 @@
   <div class="page-header" itemscope itemtype="http://schema.org/Organization">
 
     <nuxt-link to="/" exact class="logo-link" itemprop="url" tabindex="0">
-      <svg itemprop="logo" id="logo" viewBox="0 0 312 283" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg">
+      <svg 
+        itemprop="logo" 
+        aria-labelledby="logoTitle logoDesc" 
+        id="logo" 
+        viewBox="0 0 312 283" 
+        preserveAspectRatio="xMinYMin meet" 
+        xmlns="http://www.w3.org/2000/svg">
+        <title id="logoTitle">Daryn St. Pierre - Front-End Web Developer</title>
+        <desc id="logoDesc">A logo that is comprised of code brackets wrapped around a skateboard.</desc>
         <style>
         .path {
           fill: none;

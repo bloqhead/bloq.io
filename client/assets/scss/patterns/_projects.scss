@@ -6,10 +6,11 @@
   list-style: none;
   padding: 0;
   margin: 4rem 0;
+  max-width: 680px;
 }
 
 .project-list__item {
-  perspective: 1000px;
+  perspective: 680px;
   
   &:not(:last-of-type) {
     margin: 0 0 6rem 0;
@@ -22,9 +23,9 @@
 
 .project-list__link {
   position: relative;
-  display: inline-block;
+  display: block;
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
 
   &:after {
     position: absolute;
@@ -90,6 +91,46 @@
   display: block;
   margin: 0;
   // filter: grayscale(100%);
+}
+
+.project-list__item-tasks {
+  font-size: 1.3rem;
+  background: linear-gradient(to top, transparent 10%, $mid 100%);
+  margin: 0;
+  padding: 1.3rem;
+  border-radius: 0 0 3px 3px;
+
+  h4 {
+    $i: 0 0 0.8rem 0;
+    margin: $i;
+    padding: $i;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $lime;
+    border-bottom: 1px solid $shade;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  p {
+
+    &:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  @media #{$bp-medium} {
+    font-size: 1.4rem;
+  }
 }
 
 .project-list__item-content {
