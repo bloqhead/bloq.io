@@ -1,5 +1,5 @@
 # [bloq.io](https://bloq.io)
-This is the source for [my website](1). It is built in [VueJS](2) and [Nuxt](3), and hosting on [Zeit Now](4).
+This is the source for [my website](1). It is built in [VueJS](2) and [Nuxt](3), and hosted on [Zeit Now](4).
 
 ## Running
 
