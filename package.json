@@ -5,7 +5,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "deploy": "now && now alias bloq.io && now alias www.bloq.io"
+    "deploy": "now && now alias bloq.io && now alias www.bloq.io && now scale bloq.io sfo 1"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.1.0",
