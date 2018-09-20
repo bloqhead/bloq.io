@@ -37,12 +37,14 @@
     </nuxt-link>
 
     <button
-      id="hamburger"
-      class="hamburger hamburger--collapse"
       type="button"
       aria-label="Menu"
       aria-controls="menu"
       aria-expanded="false"
+      id="hamburger"
+      class="hamburger hamburger--collapse"
+      @click="toggleClass"
+      :class="{ 'is-active' : isActive }"
     >
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
@@ -50,13 +52,37 @@
       <span class="sr-only">Menu</span>
     </button> <!-- .hamburger -->
 
-    <nav id="menu" class="menu menu--main" role="navigation" aria-labelledby="hamburger">
+    <nav
+      id="menu"
+      class="menu menu--main"
+      role="navigation"
+      aria-labelledby="hamburger"
+      :class="{ 'is-active' : isActive }">
       <ul>
-        <li><nuxt-link to="/" exact tabindex="1">Home</nuxt-link></li>
-        <li><nuxt-link to="/work/" tabindex="2">Work</nuxt-link></li>
-        <li><nuxt-link to="/contact/" tabindex="3">Hello</nuxt-link></li>
+        <li><nuxt-link @click.native="removeClass" to="/" exact tabindex="1">Home</nuxt-link></li>
+        <li><nuxt-link @click.native="removeClass" to="/work/" tabindex="2">Work</nuxt-link></li>
+        <li><nuxt-link @click.native="removeClass" to="/contact/" tabindex="3">Hello</nuxt-link></li>
       </ul>
     </nav>
 
   </div> <!-- .page-header -->
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleClass() {
+      this.isActive = !this.isActive
+    },
+    removeClass() {
+      this.isActive = false
+      console.log(this.isActive)
+    }
+  }
+}
+</script>

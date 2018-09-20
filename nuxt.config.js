@@ -89,7 +89,8 @@ module.exports = {
       require('autoprefixer')({
         grid: true
       })
-    ]
+    ],
+		vendor: ['axios']
   },
   srcDir: 'client/'
 }

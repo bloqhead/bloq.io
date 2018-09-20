@@ -41,6 +41,7 @@ body {
 }
 
 .content {
+	min-height: 450px;
   padding:
     $global-component-padding
     $global-component-padding
@@ -56,7 +57,7 @@ body {
 }
 
 .page-footer__email-link {
-  
+
   > svg {
     margin-right: 10px;
   }

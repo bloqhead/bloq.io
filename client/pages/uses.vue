@@ -1,0 +1,43 @@
+<template>
+  <div class="page-content">
+    <h1 class="brush title">{{pageTitle}}</h1>
+
+    <div class="intro">
+      <p>After shamelessly taking the idea from <a href="https://wesbos.com/uses/" target="_blank">Wes Bos</a>, I've created a page that outlines the every day things I use. I always love seeing what others use and added this for anyone that might be interested.</p>
+    </div>
+
+		<h2>Hardware</h2>
+		<ul class="list">
+			<li>2017 MacBook Pro 13&quot; in space gray (no touchbar)</li>
+			<li><a href="https://www.amazon.com/gp/product/B01C8PIALU/">STM Prime Backpack</a> in steel gray</li>
+			<li><a href="https://www.amazon.com/gp/product/B01872MCIA/">68-key Qisan Magicforce gaming keyboard</a> w/ MX Blue dampers</li>
+		</ul>
+
+		<h2>Software</h2>
+		<ul class="list">
+			<li></li>
+		</ul>
+
+  </div>
+</template>
+
+<script>
+  export default {
+    asyncData( context ) {
+      return {
+        pageTitle: 'Uses.'
+      }
+    },
+    head: {
+      title: 'Uses',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'The hardware, software, and other tools I use every day.'
+        }
+      ]
+    },
+    transition: 'slide-left'
+  }
+</script>
