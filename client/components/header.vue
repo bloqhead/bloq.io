@@ -81,7 +81,6 @@ export default {
     },
     removeClass() {
       this.isActive = false
-      console.log(this.isActive)
     }
   }
 }
