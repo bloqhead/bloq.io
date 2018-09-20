@@ -40,11 +40,11 @@
       type="button"
       aria-label="Menu"
       aria-controls="menu"
-      aria-expanded="false"
+      :aria-expanded="isExpanded.toString()"
       id="hamburger"
       class="hamburger hamburger--collapse"
-      @click="toggleClass"
       :class="{ 'is-active' : isActive }"
+      @click="toggleState"
     >
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
@@ -59,9 +59,9 @@
       aria-labelledby="hamburger"
       :class="{ 'is-active' : isActive }">
       <ul>
-        <li><nuxt-link @click.native="removeClass" to="/" exact tabindex="1">Home</nuxt-link></li>
-        <li><nuxt-link @click.native="removeClass" to="/work/" tabindex="2">Work</nuxt-link></li>
-        <li><nuxt-link @click.native="removeClass" to="/contact/" tabindex="3">Hello</nuxt-link></li>
+        <li><nuxt-link @click.native="restingState" to="/" exact tabindex="1">Home</nuxt-link></li>
+        <li><nuxt-link @click.native="restingState" to="/work/" tabindex="2">Work</nuxt-link></li>
+        <li><nuxt-link @click.native="restingState" to="/contact/" tabindex="3">Hello</nuxt-link></li>
       </ul>
     </nav>
 
@@ -72,15 +72,18 @@
 export default {
   data() {
     return {
-      isActive: false
+      isActive: false,
+      isExpanded: false
     }
   },
   methods: {
-    toggleClass() {
+    toggleState() {
       this.isActive = !this.isActive
+      this.isExpanded = !this.isExpanded
     },
-    removeClass() {
+    restingState() {
       this.isActive = false
+      this.isExpanded = false
     }
   }
 }
