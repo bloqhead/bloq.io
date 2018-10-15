@@ -14,8 +14,8 @@
 
 <script>
 /** components */
-import NuxtFooter from '~/components/footer.vue'
-import NuxtHeader from '~/components/header.vue'
+import NuxtFooter from '~/components/Footer.vue'
+import NuxtHeader from '~/components/Header.vue'
 
 export default {
   components: {
