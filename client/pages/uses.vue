@@ -15,7 +15,13 @@
 
 		<h2>Software</h2>
 		<ul class="list">
-			<li></li>
+			<li><a href="https://code.visualstudio.com/" rel="noindex nofollow">VSCode</a></li>
+      <li><a href="https://www.sublimetext.com/3" rel="noindex nofollow">Sublime Text</a></li>
+      <li><a href="https://iterm2.com/" rel="noindex nofollow">iTerm 2</a></li>
+      <li><a href="https://www.sketchapp.com/" rel="noindex nofollow">Sketch</a></li>
+      <li><a href="https://sequelpro.com/" rel="noindex nofollow">Sequel Pro</a></li>
+      <li><a href="https://www.panic.com/transmit/" rel="noindex nofollow">Transmit by Panic</a></li>
+      <li>Deployed on <a href="https://zeit.co/now" rel="noindex nofollow">Zeit Now</a></li>
 		</ul>
 
   </div>
