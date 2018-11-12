@@ -9,8 +9,8 @@
 		<h2>Hardware</h2>
 		<ul class="list">
 			<li>2017 MacBook Pro 13&quot; in space gray (no touchbar)</li>
-			<li><a href="https://www.amazon.com/gp/product/B01C8PIALU/">STM Prime Backpack</a> in steel gray</li>
-			<li><a href="https://www.amazon.com/gp/product/B01872MCIA/">68-key Qisan Magicforce gaming keyboard</a> w/ MX Blue dampers</li>
+			<li><a href="https://www.amazon.com/gp/product/B01C8PIALU/" rel="noindex nofollow">STM Prime Backpack</a> in steel gray</li>
+			<li><a href="https://www.amazon.com/gp/product/B01872MCIA/" rel="noindex nofollow">68-key Qisan Magicforce gaming keyboard</a> w/ MX Blue dampers</li>
 		</ul>
 
 		<h2>Software</h2>
