@@ -28,9 +28,7 @@
       <div class="page-footer__copyright">
         <p>&copy; {{ new Date().getFullYear() }} Daryn St. Pierre</p>
         <p>Built with <a href="https://nuxtjs.org/">Nuxt</a>. Hosted by <a href="https://zeit.co/">Zeit</a>.</p>
-        <p class="page-footer__email-link">
-          <fa :icon="[ 'fa', 'envelope' ]" /> <a href="mailto:daryniscool@gmail.com">daryniscool@gmail.com</a>
-        </p>
+        <p><nuxt-link to="/uses/">What I use</nuxt-link>.</p>
       </div>
 
     </div>
