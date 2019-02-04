@@ -2,6 +2,9 @@ module.exports = {
   mode: 'universal',
   head: {
     titleTemplate: '%s | Daryn St. Pierre - Front-End Web Developer',
+    htmlAttrs: {
+      lang: 'en-us'
+    },
     meta: [
       {
         charset: 'utf-8'
