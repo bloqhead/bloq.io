@@ -5,3 +5,5 @@
 .nuxt/
 dist/
 now.json
+sw.*
+node_modules

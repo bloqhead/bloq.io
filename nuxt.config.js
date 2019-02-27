@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
   head: {
     titleTemplate: '%s | Daryn St. Pierre - Front-End Web Developer',
     meta: [
@@ -30,6 +30,7 @@ module.exports = {
     }
   ],
   modules: [
+    '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
     ['@nuxtjs/google-analytics', {
       id: 'UA-2478113-11'
