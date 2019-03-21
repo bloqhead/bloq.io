@@ -6,7 +6,7 @@
       <p>Below, you'll find some select projects I've worked on.</p>
     </div>
 
-    <ul class="project-list" data-controller="Viewport">
+    <ul class="project-list">
       
       <li 
         itemscope 
