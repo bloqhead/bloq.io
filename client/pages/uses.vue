@@ -11,6 +11,7 @@
 			<li>2017 MacBook Pro 13&quot; in space gray (no touchbar)</li>
 			<li><a href="https://www.amazon.com/gp/product/B01C8PIALU/" rel="noindex nofollow">STM Prime Backpack</a> in steel gray</li>
 			<li><a href="https://www.amazon.com/gp/product/B01872MCIA/" rel="noindex nofollow">68-key Qisan Magicforce gaming keyboard</a> w/ MX Blue dampers</li>
+      <li>iPhone Xs Max / Nexus 5 <em>(still going strong!)</em></li>
 		</ul>
 
 		<h2>Software</h2>
@@ -28,22 +29,22 @@
 </template>
 
 <script>
-  export default {
-    asyncData( context ) {
-      return {
-        pageTitle: 'Uses.'
+export default {
+  asyncData( context ) {
+    return {
+      pageTitle: 'Uses.'
+    }
+  },
+  head: {
+    title: 'Uses',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'The hardware, software, and other tools I use every day.'
       }
-    },
-    head: {
-      title: 'Uses',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'The hardware, software, and other tools I use every day.'
-        }
-      ]
-    },
-    transition: 'slide-left'
-  }
+    ]
+  },
+  transition: 'slide-left'
+}
 </script>

@@ -6,7 +6,7 @@
       <div class="intro__image">
         <img itemprop="photo" src="~/static/me.jpg" alt="A picture of Daryn smiling while wearing a comfy hoodie">
       </div>
-      <p>My name is <span itemprop="givenName">Daryn</span> and I build <a href="https://bigsea.co/work/">websites</a>
+      <p>My name is <span itemprop="givenName">Daryn</span> and I build <nuxt-link to="/work/">websites</nuxt-link>
       in sunny St. Petersburg Florida. I like to experiment on <a href="https://codepen.io/bloqhead">Codepen</a> and have been featured on the front page multiple times, as well as in <a href="https://codepen.io/spark/">Codepen Spark</a>.</p>
     </div>
 
@@ -46,22 +46,22 @@
 </template>
 
 <script>
-  export default {
-    asyncData( context ) {
-      return {
-        pageTitle: 'Versatile.'
+export default {
+  asyncData( context ) {
+    return {
+      pageTitle: 'Versatile.'
+    }
+  },
+  head: {
+    title: 'Home',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.'
       }
-    },
-    head: {
-      title: 'Home',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.'
-        }
-      ]
-    },
-    transition: 'slide-left'
-  }
+    ]
+  },
+  transition: 'slide-left'
+}
 </script>

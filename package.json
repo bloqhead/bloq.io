@@ -4,9 +4,10 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "nuxt",
     "now-build": "nuxt build --spa",
-    "deploy": "now && now alias bloq.io && now alias www.bloq.io"
+    "deploy": "now",
+    "alias": "now alias set bloq.bloqhead.now.sh bloq.io && now alias set bloq.bloqhead.now.sh www.bloq.io"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.12",

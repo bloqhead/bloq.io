@@ -10,22 +10,22 @@
 </template>
 
 <script>
-  export default {
-    asyncData( context ) {
-      return {
-        pageTitle: 'Hello.'
+export default {
+  asyncData( context ) {
+    return {
+      pageTitle: 'Hello.'
+    }
+  },
+  head: {
+    title: 'Contact Me',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Drop me a line.'
       }
-    },
-    head: {
-      title: 'Contact Me',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Drop me a line.'
-        }
-      ]
-    },
-    transition: 'slide-left'
-  }
+    ]
+  },
+  transition: 'slide-left'
+}
 </script>

@@ -1,21 +1,21 @@
 <template>
   <div class="page-wrapper">
 
-    <nuxt-header></nuxt-header>
+    <NuxtHeader></NuxtHeader>
 
     <div class="content" role="main">
       <nuxt />
     </div> <!-- .content -->
 
-    <nuxt-footer></nuxt-footer>
+    <NuxtFooter></NuxtFooter>
 
   </div> <!-- .page-wrapper -->
 </template>
 
 <script>
 /** components */
-import NuxtFooter from '~/components/Footer.vue'
-import NuxtHeader from '~/components/Header.vue'
+import NuxtFooter from '~/components/footer.vue'
+import NuxtHeader from '~/components/header.vue'
 
 export default {
   components: {
