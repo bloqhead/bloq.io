@@ -1,5 +1,5 @@
 <template>
-  <div class="page-wrapper">
+  <div class="page-wrapper" data-floating-label="Daryn St. Pierre // Front End Web Dev">
 
     <NuxtHeader></NuxtHeader>
 

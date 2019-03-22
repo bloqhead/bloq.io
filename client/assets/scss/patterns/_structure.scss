@@ -68,17 +68,18 @@ body {
 
     &:before {
       position: absolute;
-      top: 40rem; left: -45px;
+      top: 25rem;
+      left: 13rem;
       display: block;
-      content: "Daryn St. Pierre // Front End Web Dev";
+      content: attr(data-floating-label);
       font-family: $overpass-mono;
       font-size: 1.2rem;
       font-weight: 700;
       letter-spacing: $char-spacing;
       line-height: 0;
       text-transform: uppercase;
-      transform-origin: 50% 0;
-      transform: rotate(-90deg);
+      writing-mode: vertical-lr;
+      text-orientation: sideways;
       color: $shade;
       @include cleartext;
     }

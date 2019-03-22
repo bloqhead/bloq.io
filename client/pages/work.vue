@@ -15,8 +15,8 @@
         :key="index"
         :class="`project-list__item project-list__item--${index}`"
       >
-        <a itemprop="url" rel="noindex nofollow" v-bind:href="project.url" class="project-list__link">
-          <img v-bind:src="project.image" v-bind:alt="`A screenshot of the ${project.title} project`" class="project-list__item-image"> <!-- .project-list__item-image -->
+        <a itemprop="url" rel="noindex nofollow" :href="project.url" class="project-list__link">
+          <img :src="project.image" :alt="`A screenshot of the ${project.title} project`" class="project-list__item-image"> <!-- .project-list__item-image -->
           <div class="project-list__item-content">
             <h3 itemprop="headline" class="project-list__item-title angle-forward">
               <div class="angle-reverse" v-html="project.title"></div>

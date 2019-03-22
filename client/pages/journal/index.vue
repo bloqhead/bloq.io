@@ -1,13 +1,21 @@
 <template>
   <div class="page-content">
-    <h1 class="brush title">Journal</h1>
 
-    <ul>
-      <li v-for="(post, index) in posts" :key="index">
-        {{ post.fields.title }}
-        <pre><code>{{ post }}</code></pre>
-      </li>
-    </ul>
+    <div class="articles">
+      
+      <article v-for="(post, index) in posts" :key="index">
+        <h3>
+          <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
+            {{ post.fields.title }}
+          </nuxt-link>
+        </h3>
+        <div class="article__content">
+          <p>{{ post.fields.description }}</p>
+        </div>
+        <!-- <code><pre>{{ post }}</pre></code> -->
+      </article>
+
+    </div>
 
   </div>
 </template>

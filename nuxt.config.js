@@ -1,4 +1,10 @@
-const config = require('./.contentful.json')
+import config from './.contentful.json'
+import {createClient} from './client/plugins/contentful'
+const cdaClient = createClient(config)
+
+// 
+// TODO: organize the Contentful config and env stuff better
+// 
 
 module.exports = {
   env: {
@@ -55,6 +61,9 @@ module.exports = {
       lang: 'scss'
     }
   ],
+  plugins: [
+    '~/plugins/contentful'
+  ],
   modules: [
     '@nuxtjs/pwa',
     ['@nuxtjs/google-analytics', {
@@ -105,6 +114,20 @@ module.exports = {
       ]
     }]
   ],
+  generate: {
+    routes() {
+      return Promise.all([
+        cdaClient.getEntries({
+          'content_type': config.CTF_BLOG_POST_TYPE_ID
+        })
+      ])
+      .then(([entries, postType]) => {
+        return [
+          ...entries.items.map(entry => `/journal/${entry.fields.slug}`)
+        ]
+      })
+    }
+  },
   loadingIndicator: {
     color: '#8bd76b',
     background: '#000'
