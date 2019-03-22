@@ -61,7 +61,8 @@
       <ul>
         <li><nuxt-link @click.native="restingState" to="/" exact tabindex="1">Home</nuxt-link></li>
         <li><nuxt-link @click.native="restingState" to="/work/" tabindex="2">Work</nuxt-link></li>
-        <li><nuxt-link @click.native="restingState" to="/contact/" tabindex="3">Hello</nuxt-link></li>
+        <li><nuxt-link @click.native="restingState" to="/journal/" tabindex="3">Journal</nuxt-link></li>
+        <li><nuxt-link @click.native="restingState" to="/contact/" tabindex="4">Hello</nuxt-link></li>
       </ul>
     </nav>
 

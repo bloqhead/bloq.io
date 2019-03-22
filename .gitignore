@@ -8,3 +8,4 @@ now.json
 sw.*
 node_modules
 .npmrc
+.contentful.json
