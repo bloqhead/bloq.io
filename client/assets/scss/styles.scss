@@ -32,4 +32,8 @@ $hamburger-layer-color: $lime;
 @import "patterns/footer";
 @import "patterns/social";
 @import "patterns/helpers";
-@import "patterns/projects";
+@import "patterns/breadcrumb";
+
+// pages
+@import "pages/projects";
+@import "pages/journal";

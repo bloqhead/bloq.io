@@ -1,19 +1,26 @@
 <template>
   <div class="page-content">
+    <h1 class="brush title">Journal.</h1>
 
-    <div class="articles">
+    <div class="intro">
+      <p>A collection of thoughts and findings.</p>
+    </div>
+
+    <div class="journal-list">
       
-      <article v-for="(post, index) in posts" :key="index">
-        <h3>
-          <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}">
-            {{ post.fields.title }}
-          </nuxt-link>
+      <div class="journal-list__item" v-for="(post, index) in posts" :key="index">
+        <h3 class="journal-list__title">
+          <nuxt-link :to="post.fields.slug">{{ post.fields.title }}</nuxt-link>
         </h3>
-        <div class="article__content">
-          <p>{{ post.fields.description }}</p>
-        </div>
-        <!-- <code><pre>{{ post }}</pre></code> -->
-      </article>
+        <time class="journal-entry__postdate">
+          <fa :icon="[ 'fa', 'clock' ]" />&nbsp;
+          {{
+            (new Date(post.fields.publishDate)).toLocaleDateString('en-US', {
+              year: 'numeric', month: 'long', day: 'numeric'
+            })
+          }}
+        </time>
+      </div>
 
     </div>
 
@@ -21,6 +28,7 @@
 </template>
 
 <script>
+import VueMarkdown from 'vue-markdown'
 import {createClient} from '~/plugins/contentful.js'
 
 const client = createClient()
@@ -33,7 +41,7 @@ export default {
       }),
       client.getEntries({
         'content_type': env.CTF_BLOG_POST_TYPE_ID,
-        order: '-sys.createdAt'
+        'order': '-sys.createdAt'
       })
     ]).then(([entries, posts]) => {
       return {
@@ -51,6 +59,9 @@ export default {
         content: 'Some random writings and thoughts.'
       }
     ]
+  },
+  components: {
+    VueMarkdown
   },
   transition: 'slide-left'
 }

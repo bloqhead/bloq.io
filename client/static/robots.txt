@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: http://Daryns-MBP13.local/sitemap.xml

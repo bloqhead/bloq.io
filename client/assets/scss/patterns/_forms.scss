@@ -41,7 +41,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type=
   }
 }
 
-input[type="submit"], input[type="reset"], button:not(.hamburger) {
+input[type="submit"], input[type="reset"], button:not(.hamburger), .btn {
   display: inline-block;
   clear: both;
   background-color: $pink;
@@ -49,9 +49,10 @@ input[type="submit"], input[type="reset"], button:not(.hamburger) {
   margin: 1.25rem 0;
   border: 0;
   color: $light;
-  font-size: 18px;
+  font-size: inherit;
   font-family: $open-sans;
   font-weight: 700;
+  text-decoration: none;
   cursor: pointer;
   box-shadow: 3px 3px 0 0 $lime;
   will-change: box-shadow, color, background;
@@ -75,6 +76,10 @@ input[type="submit"], input[type="reset"], button:not(.hamburger) {
       transform: translateX(3px);
     }
   }
+}
+
+.btn--small {
+  padding: 1rem 2rem;
 }
 
 label {

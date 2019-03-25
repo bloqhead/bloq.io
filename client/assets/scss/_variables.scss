@@ -31,7 +31,7 @@ $lime: #8bd76b;
 $pink: #f54768;
 $light: #fff;
 $mid: #222;
-$shade: #555;
+$shade: #777;
 $dark: #000;
 
 // Brand colors
@@ -47,18 +47,26 @@ $vue: #41b883;
 $colors-site: (
   $teal
   $yellow
-  $red
-  $lime
   $pink
+  $lime
+  $red
+  $light
+  $mid
+  $shade
+  $dark
 );
 
 // site color named array
 $colors-site-named: (
-  ( $teal 'teal' ),
-  ( $yellow 'yellow' ),
-  ( $red 'red' ),
-  ( $lime 'lime' ),
-  ( $pink 'pink' )
+  ( $teal     'teal' ),
+  ( $yellow   'yellow' ),
+  ( $red      'red' ),
+  ( $lime     'lime' ),
+  ( $pink     'pink' ),
+  ( $light    'light' ),
+  ( $mid      'mid' ),
+  ( $shade    'shade' ),
+  ( $dark     'dark' )
 );
 
 // brand color array

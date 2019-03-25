@@ -1,10 +1,6 @@
-import config from './.contentful.json'
 import {createClient} from './client/plugins/contentful'
-const cdaClient = createClient(config)
-
-// 
-// TODO: organize the Contentful config and env stuff better
-// 
+const config = require('./.contentful.json')
+const client = createClient()
 
 module.exports = {
   env: {
@@ -108,7 +104,8 @@ module.exports = {
           icons: [
             'faEnvelope',
             'faArrowRight',
-            'faCode'
+            'faCode',
+            'faClock'
           ]
         }
       ]
@@ -117,11 +114,11 @@ module.exports = {
   generate: {
     routes() {
       return Promise.all([
-        cdaClient.getEntries({
+        client.getEntries({
           'content_type': config.CTF_BLOG_POST_TYPE_ID
         })
       ])
-      .then(([entries, postType]) => {
+      .then(([entries]) => {
         return [
           ...entries.items.map(entry => `/journal/${entry.fields.slug}`)
         ]
