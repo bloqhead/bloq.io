@@ -64,6 +64,8 @@ export default {
     .catch(console.error)
   },
   head: {
+    // TODO figure out how to set the meta data on the fly based
+    // on the blog article content
     title: 'Contact Me',
     meta: [
       {

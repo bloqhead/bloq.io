@@ -12,7 +12,7 @@ $journal-header-border: 4px solid $mid;
 }
 
 .journal-list__item {
-
+  margin: 0 0 3rem 0;
 }
 
 .journal-list__summary {
@@ -20,6 +20,7 @@ $journal-header-border: 4px solid $mid;
 }
 
 .journal-list__title {
+  margin: 0 0 .8rem 0;
 
   a {
     text-decoration: none;
@@ -81,6 +82,21 @@ $journal-header-border: 4px solid $mid;
 }
 
 @media #{$bp-medium-large} {
+  // Article list
+
+  .journal-list {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: stretch;
+  }
+
+  .journal-list__item {
+    // flex: 0 0 33.33%;
+    // padding: 3rem;
+  }
+
+  // Main articles
+
   .journal-entry__header {
     display: flex;
     align-items: flex-end;
