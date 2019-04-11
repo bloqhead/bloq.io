@@ -2,7 +2,7 @@
   <div class="page-content">
 
     <div class="breadcrumb">
-      <p><nuxt-link to="/journal/">&larr; Back</nuxt-link></p>
+      <p><nuxt-link to="/journal/" class="breadcrumb__link">&larr; Back</nuxt-link></p>
     </div>
     
     <article class="journal-entry">
@@ -30,9 +30,7 @@
         >
       </div>
 
-      <div class="journal-entry__body">
-        <vue-markdown>{{ post.fields.body }}</vue-markdown>
-      </div>
+      <div class="journal-entry__body" v-html="$md.render(post.fields.body)"/>
 
       <!-- <footer v-if="post.fields.tags" class="journal-entry__footer">
         <ul>
@@ -46,7 +44,6 @@
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'
 import {createClient} from '~/plugins/contentful.js'
 
 const client = createClient()
@@ -79,9 +76,6 @@ export default {
         }
       ]
     }
-  },
-  components: {
-    VueMarkdown
   },
   transition: 'slide-left'
 }

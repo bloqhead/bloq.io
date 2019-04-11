@@ -2,17 +2,46 @@
 // Typography
 //
 
-// Links - base
-a {
-  color: $lime;
-  text-decoration: underline;
+$link-gradient: linear-gradient(to right, $lime, $pink);
+$link-gradient-hover: linear-gradient(to right, $light, $light);
 
-  &, &:after {
-    transition: all 0.2s ease;
+// Links - base
+
+@mixin link-base {
+  color: $lime;
+  text-decoration: none;
+  font-weight: 600;
+  will-change: color;
+  transition: color 250ms $base-easing;
+}
+
+a {
+  @include link-base();
+}
+
+.page-content a {
+  display: inline-flex;
+  flex-direction: column;
+
+  &:after {
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    content: "";
+    width: auto;
+    height: 2px;
+    background: $link-gradient;
+    will-change: background, transform;
+    transform-origin: top center;
+    transition: color 250ms $base-easing, background 250ms $base-easing;
   }
 
   &:hover {
-    color: $yellow;
+    color: $light;
+    
+    &:after {
+      background: $link-gradient-hover;
+    }
   }
 }
 

@@ -28,7 +28,6 @@
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'
 import {createClient} from '~/plugins/contentful.js'
 
 const client = createClient()
@@ -59,9 +58,6 @@ export default {
         content: 'Some random writings and thoughts.'
       }
     ]
-  },
-  components: {
-    VueMarkdown
   },
   transition: 'slide-left'
 }

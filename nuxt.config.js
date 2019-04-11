@@ -61,6 +61,7 @@ module.exports = {
     '~/plugins/contentful'
   ],
   modules: [
+    '@nuxtjs/markdownit',
     '@nuxtjs/pwa',
     ['@nuxtjs/google-analytics', {
       id: 'UA-2478113-11'
@@ -140,5 +141,11 @@ module.exports = {
     ],
 		vendor: ['axios']
   },
-  srcDir: 'client/'
+  srcDir: 'client/',
+  markdownit: {
+    injected: true,
+    use: [
+      'markdown-it-highlightjs'
+    ]
+  }
 }

@@ -15,12 +15,14 @@
     "@fortawesome/free-solid-svg-icons": "^5.6.3",
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/localtunnel": "^1.0.2",
+    "@nuxtjs/markdownit": "^1.2.3",
     "@nuxtjs/pwa": "^2.6.0",
     "autoprefixer": "^8.6.5",
     "axios": "^0.18.0",
     "contentful": "^7.5.0",
     "express": "^4.16.3",
     "hoek": "^5.0.3",
+    "markdown-it-highlightjs": "^3.0.0",
     "nodemailer": "^4.6.8",
     "npm": "^6.1.0",
     "nuxt": "latest",
@@ -30,7 +32,6 @@
     "nuxt-social-meta": "^0.0.1",
     "tunnel-agent": "^0.6.0",
     "validator": "^10.7.1",
-    "vue-markdown": "^2.2.4",
     "xss-filters": "^1.2.7"
   },
   "devDependencies": {

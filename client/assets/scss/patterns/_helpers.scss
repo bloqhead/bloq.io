@@ -100,18 +100,12 @@
   justify-content: center;
 }
 
-.flex-well--auto {
-  
-  > * {
-    flex: auto;
-  }
+.flex-well--auto > * {
+  flex: auto;
 }
 
-.flex-well--padded-items {
-
-  > * {
-    margin: 2rem;
-  }
+.flex-well--padded-items > * {
+  margin: 2rem;
 }
 
 .mt--sm {

@@ -59,10 +59,10 @@
       aria-labelledby="hamburger"
       :class="{ 'is-active' : isActive }">
       <ul>
-        <li><nuxt-link @click.native="restingState" to="/" exact tabindex="1">Home</nuxt-link></li>
-        <li><nuxt-link @click.native="restingState" to="/work/" tabindex="2">Work</nuxt-link></li>
-        <li><nuxt-link @click.native="restingState" to="/journal/" tabindex="3">Journal</nuxt-link></li>
-        <li><nuxt-link @click.native="restingState" to="/contact/" tabindex="4">Hello</nuxt-link></li>
+        <li><nuxt-link @click.native="restingState" to="/" exact tabindex="1" class="menu__link">Home</nuxt-link></li>
+        <li><nuxt-link @click.native="restingState" to="/work/" tabindex="2" class="menu__link">Work</nuxt-link></li>
+        <li><nuxt-link @click.native="restingState" to="/journal/" tabindex="3" class="menu__link">Journal</nuxt-link></li>
+        <li><nuxt-link @click.native="restingState" to="/contact/" tabindex="4" class="menu__link">Hello</nuxt-link></li>
       </ul>
     </nav>
 
