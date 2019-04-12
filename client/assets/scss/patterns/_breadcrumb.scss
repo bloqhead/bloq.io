@@ -15,5 +15,9 @@
 
   .breadcrumb__link {
     text-decoration: none;
+
+    &::after {
+      display: none;
+    }
   }
 }

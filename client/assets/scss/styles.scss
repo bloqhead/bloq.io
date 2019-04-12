@@ -7,8 +7,8 @@
 
 // vendor
 @import "vendor/minireset";
-@import "vendor/hljs-dracula";
 
+// hamburger settings
 $hamburger-layer-width: 40px;
 $hamburger-layer-height: 4px;
 $hamburger-layer-spacing: 8px;
@@ -34,6 +34,7 @@ $hamburger-layer-color: $lime;
 @import "patterns/social";
 @import "patterns/helpers";
 @import "patterns/breadcrumb";
+@import "patterns/highlightjs";
 
 // pages
 @import "pages/projects";

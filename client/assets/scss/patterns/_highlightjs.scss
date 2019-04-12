@@ -14,11 +14,43 @@ http://zenorocha.mit-license.org
 
 */
 
-.hljs {
+.hljs, code {
   display: block;
   overflow-x: auto;
-  padding: 0.5em;
-  background: #282a36;
+  padding: 2rem;
+  margin: 2rem auto;
+  background: $mid;
+  font-size: 1.8rem;
+}
+
+code[class] {
+  position: relative;
+
+  &::before, &::after {
+    position: absolute;
+    top: 0;
+    display: block;
+  }
+  
+  &::before {
+    right: 30px;
+    content: attr(class);
+    font-family: $overpass-mono;
+    line-height: 1;
+    text-transform: lowercase;
+    color: $mid;
+    padding: 1rem;
+    border-radius: 0 0 .25rem .25rem;
+    background-color: $lime;
+  }
+
+  &::after {
+    left: 0;
+    content: "";
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to right, $pink 50%,$lime 75%);
+  }
 }
 
 .hljs-keyword,
@@ -26,7 +58,7 @@ http://zenorocha.mit-license.org
 .hljs-literal,
 .hljs-section,
 .hljs-link {
-  color: #8be9fd;
+  color: $pink;
 }
 
 .hljs-function .hljs-keyword {
@@ -49,7 +81,7 @@ http://zenorocha.mit-license.org
 .hljs-variable,
 .hljs-template-tag,
 .hljs-template-variable {
-  color: #f1fa8c;
+  color: $yellow;
 }
 
 .hljs-comment,

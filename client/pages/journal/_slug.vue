@@ -30,7 +30,7 @@
         >
       </div>
 
-      <div class="journal-entry__body" v-html="$md.render(post.fields.body)"/>
+      <div class="journal-entry__body" v-html="formatContent()"/>
 
       <!-- <footer v-if="post.fields.tags" class="journal-entry__footer">
         <ul>
@@ -75,6 +75,13 @@ export default {
           content: this.post.fields.description
         }
       ]
+    }
+  },
+  methods: {
+    formatContent: function() {
+      let content = this.$md.render(this.post.fields.body)
+      let newContent = content.replace('class="hljs language-', 'class="')
+      return newContent
     }
   },
   transition: 'slide-left'
