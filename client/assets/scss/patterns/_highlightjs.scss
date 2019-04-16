@@ -23,7 +23,7 @@ http://zenorocha.mit-license.org
   font-size: 1.8rem;
 }
 
-code[class] {
+code[data-label] {
   position: relative;
 
   &::before, &::after {
@@ -34,7 +34,7 @@ code[class] {
   
   &::before {
     right: 30px;
-    content: attr(class);
+    content: attr(data-label);
     font-family: $overpass-mono;
     line-height: 1;
     text-transform: lowercase;
@@ -54,8 +54,8 @@ code[class] {
 }
 
 // hide the language label if the code block has the 
-// class attribute but no actual class set
-code[class='']::before {
+// data attribute but no actual value set
+code[data-label='']::before {
   display: none;
 }
 

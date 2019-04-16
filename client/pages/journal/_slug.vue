@@ -81,17 +81,19 @@ export default {
     this.cleanCodeBlocks()
   },
   methods: {
-    // cleans up classes on code blocks so that i can leverage
-    // the refactored class for pseudo element styling
+    // cleans up classes on code blocks and adds a data attribute
+    // that i can then leverage for styling the pseudo elements based
+    // on language.
     cleanCodeBlocks() {
       let content = this.$el
       let blocks = content.querySelectorAll('code')
       blocks.forEach( (i) => {
-        let newClass = i.classList.value
+        let label = i.classList.value
           .replace('language-','')
           .replace('hljs ', '')
           .replace('hljs', '')
-        i.classList = newClass
+        i.removeAttribute('class')
+        i.setAttribute('data-label', label)
       })
     }
   },
