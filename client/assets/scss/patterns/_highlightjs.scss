@@ -53,6 +53,12 @@ code[class] {
   }
 }
 
+// hide the language label if the code block has the 
+// class attribute but no actual class set
+code[class='']::before {
+  display: none;
+}
+
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-literal,

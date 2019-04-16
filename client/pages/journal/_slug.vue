@@ -30,7 +30,7 @@
         >
       </div>
 
-      <div class="journal-entry__body" v-html="formatContent()"/>
+      <div class="journal-entry__body" v-html="$md.render(post.fields.body)"/>
 
       <!-- <footer v-if="post.fields.tags" class="journal-entry__footer">
         <ul>
@@ -77,11 +77,22 @@ export default {
       ]
     }
   },
+  mounted() {
+    this.cleanCodeBlocks()
+  },
   methods: {
-    formatContent: function() {
-      let content = this.$md.render(this.post.fields.body)
-      let newContent = content.replace('class="hljs language-', 'class="')
-      return newContent
+    // cleans up classes on code blocks so that i can leverage
+    // the refactored class for pseudo element styling
+    cleanCodeBlocks() {
+      let content = this.$el
+      let blocks = content.querySelectorAll('code')
+      blocks.forEach( (i) => {
+        let newClass = i.classList.value
+          .replace('language-','')
+          .replace('hljs ', '')
+          .replace('hljs', '')
+        i.classList = newClass
+      })
     }
   },
   transition: 'slide-left'
