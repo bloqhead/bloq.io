@@ -12,14 +12,9 @@
         <h3 class="journal-list__title">
           <nuxt-link :to="post.fields.slug">{{ post.fields.title }}</nuxt-link>
         </h3>
-        <time class="journal-entry__postdate">
-          <fa :icon="[ 'fa', 'clock' ]" />&nbsp;
-          {{
-            (new Date(post.fields.publishDate)).toLocaleDateString('en-US', {
-              year: 'numeric', month: 'long', day: 'numeric'
-            })
-          }}
-        </time>
+        <div class="journal-entry__postdate">
+          <format-date :date="post.fields.publishDate"/>
+        </div>
       </div>
 
     </div>
@@ -29,6 +24,7 @@
 
 <script>
 import {createClient} from '~/plugins/contentful.js'
+import FormatDate from '~/components/format-date.vue'
 
 const client = createClient()
 
@@ -58,6 +54,9 @@ export default {
         content: 'Some random writings and thoughts.'
       }
     ]
+  },
+  components: {
+    FormatDate
   },
   transition: 'slide-left'
 }

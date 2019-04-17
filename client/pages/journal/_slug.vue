@@ -11,14 +11,9 @@
         <div class="journal-entry__title">
           <h1>{{ post.fields.title }}</h1>
         </div>
-        <time class="journal-entry__postdate">
-          <fa :icon="[ 'fa', 'clock' ]" />&nbsp;
-          {{
-            (new Date(post.fields.publishDate)).toLocaleDateString('en-US', {
-              year: 'numeric', month: 'long', day: 'numeric'
-            })
-          }}
-        </time>
+        <div class="journal-entry__postdate">
+          <format-date :date="post.fields.publishDate"/>
+        </div>
       </header>
 
       <div v-if="post.fields.heroImage" class="journal__hero">
@@ -45,6 +40,7 @@
 
 <script>
 import {createClient} from '~/plugins/contentful.js'
+import FormatDate from '~/components/format-date.vue'
 
 const client = createClient()
 
@@ -87,15 +83,18 @@ export default {
     cleanCodeBlocks() {
       let content = this.$el
       let blocks = content.querySelectorAll('code')
-      blocks.forEach( (i) => {
-        let label = i.classList.value
+      blocks.forEach( el => {
+        let label = el.classList.value
           .replace('language-','')
           .replace('hljs ', '')
           .replace('hljs', '')
-        i.removeAttribute('class')
-        i.setAttribute('data-label', label)
+        el.removeAttribute('class')
+        el.setAttribute('data-label', label)
       })
     }
+  },
+  components: {
+    FormatDate
   },
   transition: 'slide-left'
 }
