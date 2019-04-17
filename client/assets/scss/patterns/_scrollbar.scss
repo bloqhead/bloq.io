@@ -1,0 +1,19 @@
+// 
+// Scrollbar styles
+// 
+
+body::-webkit-scrollbar {
+  width: .8em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: $mid;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $pink;
+  border-radius: 1em;
+}

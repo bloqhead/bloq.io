@@ -13,7 +13,6 @@
 </template>
 
 <script>
-/** components */
 import NuxtFooter from '~/components/footer.vue'
 import NuxtHeader from '~/components/header.vue'
 
