@@ -14,16 +14,25 @@ http://zenorocha.mit-license.org
 
 */
 
-.hljs, code {
+// custom
+
+code {
+  display: inline-block;
+  background: $mid;
+  padding: 0 1rem;
+  border-radius: 3px;
+}
+
+pre code {
   display: block;
   overflow-x: auto;
   padding: 2rem;
   margin: 2rem auto;
-  background: $mid;
-  font-size: 1.8rem;
+
+  @include scrollbar-h;
 }
 
-code[data-label] {
+pre code[data-label] {
   position: relative;
 
   &::before, &::after {
@@ -34,7 +43,7 @@ code[data-label] {
   
   &::before {
     right: 30px;
-    content: attr(data-label);
+    content: "<" attr(data-label) ">";
     font-family: $overpass-mono;
     line-height: 1;
     text-transform: lowercase;
@@ -55,9 +64,11 @@ code[data-label] {
 
 // hide the language label if the code block has the 
 // data attribute but no actual value set
-code[data-label='']::before {
+pre code[data-label='']::before {
   display: none;
 }
+
+// base theme
 
 .hljs-keyword,
 .hljs-selector-tag,
@@ -111,4 +122,10 @@ code[data-label='']::before {
 
 .hljs-emphasis {
   font-style: italic;
+}
+
+@media #{$bp-medium} {
+  pre code {
+    font-size: 1.8rem;
+  }
 }

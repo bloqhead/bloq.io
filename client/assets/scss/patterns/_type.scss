@@ -229,7 +229,13 @@ p {
     counter-reset: item-counter;
 
     li {
-      padding: 0 0 0 4rem;
+      display: block;
+      padding: 0 0 1rem 4rem;
+      margin: 1.5rem 0;
+      
+      &:not(:last-of-type) {
+        border-bottom: 1px solid $mid;
+      }
 
       &::before {
         position: absolute;
