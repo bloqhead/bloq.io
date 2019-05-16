@@ -42,6 +42,7 @@ $sass: #cf649a;
 $js: #f0db4f;
 $php: #777bb3;
 $vue: #41b883;
+$wordpress: #2D73A5;
 
 // site color array
 $colors-site: (
@@ -63,13 +64,14 @@ $colors-site-named: (
 
 // brand color array
 $colors-brand: (
-  ( $github   'github' ),
-  ( $twitter  'twitter' ),
-  ( $html5    'html5' ),
-  ( $sass     'sass' ),
-  ( $js       'js' ),
-  ( $php      'php' ),
-  ( $vue      'vue' )
+  ( $github     'github' ),
+  ( $twitter    'twitter' ),
+  ( $html5      'html5' ),
+  ( $sass       'sass' ),
+  ( $js         'js' ),
+  ( $php        'php' ),
+  ( $vue        'vue' ),
+  ( $wordpress  'wordpress' )
 );
 
 // Breakpoints

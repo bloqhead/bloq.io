@@ -26,6 +26,7 @@
 
     <div class="flex-well flex-well--auto flex-well--padded-items align--center mt--sm mb--sm">
       <fa :icon="[ 'fab', 'html5' ]" class="fa-7x color--html5" />
+      <fa :icon="[ 'fab', 'wordpress-simple' ]" class="fa-7x color--wordpress" />
       <fa :icon="[ 'fab', 'sass' ]" class="fa-7x color--sass" />
       <fa :icon="[ 'fab', 'js' ]" class="fa-7x color--js" />
       <fa :icon="[ 'fab', 'php' ]" class="fa-7x color--php" />
@@ -33,6 +34,7 @@
     </div>
 
     <ul class="list list--cols">
+      <li>WordPress</li>
       <li><a href="https://sass-lang.com/">Sass</a></li>
       <li>JavaScript / ES6</li>
       <li>HTML5</li>

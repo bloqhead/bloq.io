@@ -17,6 +17,21 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content: 'Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.'
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: 'bloq.io'
+      },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.'
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: 'Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.'
       }
     ],
     link: [
@@ -34,14 +49,18 @@ module.exports = {
   ],
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/sitemap',
     ['@nuxtjs/google-analytics', {
       id: 'UA-2478113-11'
     }],
+    ['nuxt-seo-module', {
+      sitemap: [{
+        generate: true,
+        path: 'sitemap.xml',
+        hostname: 'https://bloq.io/'
+      }]
+    }],
     ['nuxt-social-meta', {
       url: 'https://bloq.io',
-      title: 'Daryn St. Pierre - Front-End Web Developer',
-      description: 'Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida.',
       img: 'client/static/icon.png',
       locale: 'en_US',
       twitter: '@bloqhead',
@@ -64,7 +83,8 @@ module.exports = {
             'faSass',
             'faPhp',
             'faJs',
-            'faVuejs'
+            'faVuejs',
+            'faWordpressSimple'
           ]
         },
         {
@@ -84,9 +104,6 @@ module.exports = {
   },
   loading: {
     color: '#8bd76b'
-  },
-  sitemap: {
-    gzip: true
   },
   build: {
     postcss: [
