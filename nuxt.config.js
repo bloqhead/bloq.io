@@ -97,7 +97,8 @@ module.exports = {
             'faSass',
             'faPhp',
             'faJs',
-            'faVuejs'
+            'faVuejs',
+            'faWordpressSimple'
           ]
         },
         {
