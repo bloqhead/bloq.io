@@ -3,11 +3,10 @@
   "license": "ISC",
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build --spa",
+    "build": "nuxt build",
     "start": "nuxt",
-    "now-build": "nuxt build --spa",
-    "deploy": "now",
-    "alias": "now alias set bloq.bloqhead.now.sh bloq.io && now alias set bloq.bloqhead.now.sh www.bloq.io"
+    "now-build": "nuxt build",
+    "deploy": "now"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.12",
