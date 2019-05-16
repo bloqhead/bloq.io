@@ -37,7 +37,7 @@ module.exports = {
     link: [
       {
         rel: 'stylesheet',
-        href: '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Overpass+Mono:400,700'
+        href: '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Overpass+Mono:400,700&font-display=swap'
       }
     ]
   },
@@ -56,7 +56,7 @@ module.exports = {
       sitemap: [{
         generate: true,
         path: 'sitemap.xml',
-        hostname: 'https://bloq.io/'
+        hostname: null
       }]
     }],
     ['nuxt-social-meta', {
