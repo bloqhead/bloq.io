@@ -7,17 +7,24 @@
   padding: 0;
   margin: 4rem 0;
   max-width: 680px;
+
+  li::before {
+    display: none !important;
+  }
+
+  a::after {
+    display: none !important;
+  }
 }
 
 .project-list__item {
   perspective: 680px;
-  
+
   &:not(:last-of-type) {
     margin: 0 0 6rem 0;
   }
 
   &:before {
-
   }
 }
 
@@ -29,7 +36,8 @@
 
   &:after {
     position: absolute;
-    bottom: -3rem; left: 0;
+    bottom: -3rem;
+    left: 0;
     z-index: 0;
     content: "";
     display: block;
@@ -46,9 +54,7 @@
 
     &:after {
       will-change: height, transform;
-      transition:
-        height 300ms $base-easing,
-        transform 300ms $base-easing 100ms;
+      transition: height 300ms $base-easing, transform 300ms $base-easing 100ms;
     }
 
     &:hover {
@@ -78,7 +84,7 @@
   padding: 0.65rem 2rem;
   float: right;
   clear: both;
-  transform: skewX(-10deg) translate(1rem,-1.2rem) !important;
+  transform: skewX(-10deg) translate(1rem, -1.2rem) !important;
   font-size: 1.2rem;
   font-weight: 700;
   color: $light;
@@ -116,7 +122,6 @@
   }
 
   p {
-
     &:first-of-type {
       margin-top: 0;
       padding-top: 0;
@@ -136,7 +141,8 @@
 .project-list__item-content {
   position: absolute;
   z-index: 1;
-  bottom: 0; left: 30px;
+  bottom: 0;
+  left: 30px;
   display: block;
   width: calc(100% - 60px);
 }
@@ -153,7 +159,8 @@
   color: $teal;
   transition: background 300ms ease-in-out, color 300ms ease-in-out;
 
-  &:after, &:before {
+  &:after,
+  &:before {
     display: none;
   }
 
