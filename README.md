@@ -1,4 +1,4 @@
-![bloq.io logo](/client/assets/images/logo.svg)
+<div style="max-width:150px;">![bloq.io logo](/client/assets/images/logo.svg)</div>
 
 # [bloq.io](https://bloq.io)
 
