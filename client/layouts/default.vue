@@ -1,24 +1,25 @@
 <template>
   <div class="page-wrapper" data-floating-label="Daryn St. Pierre // Front End Web Dev">
-
-    <NuxtHeader></NuxtHeader>
+    <nuxt-header />
 
     <div class="content" role="main">
       <nuxt />
-    </div> <!-- .content -->
+    </div>
+    <!-- .content -->
 
-    <NuxtFooter></NuxtFooter>
-
-  </div> <!-- .page-wrapper -->
+    <nuxt-footer />
+  </div>
+  <!-- .page-wrapper -->
 </template>
 
 <script>
-import NuxtFooter from '~/components/footer.vue'
-import NuxtHeader from '~/components/header.vue'
+import NuxtFooter from "~/components/footer.vue";
+import NuxtHeader from "~/components/header.vue";
 
 export default {
   components: {
-    NuxtFooter, NuxtHeader
+    NuxtFooter,
+    NuxtHeader
   }
-}
+};
 </script>
