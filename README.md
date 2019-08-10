@@ -1,5 +1,3 @@
-<div style="max-width:150px;">![bloq.io logo](/client/assets/images/logo.svg)</div>
-
 # [bloq.io](https://bloq.io)
 
 This is the source for [my website](https://bloq.io/). It is built in [VueJS](https://vuejs.org/) and [Nuxt](https://nuxtjs.org/), and hosted on [Zeit Now](https://zeit.co/now).
