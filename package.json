@@ -16,6 +16,7 @@
     "@nuxtjs/localtunnel": "^1.0.2",
     "@nuxtjs/markdownit": "^1.2.3",
     "@nuxtjs/pwa": "^2.6.0",
+    "animejs": "^3.1.0",
     "autoprefixer": "^8.6.5",
     "axios": "^0.18.0",
     "contentful": "^7.5.0",

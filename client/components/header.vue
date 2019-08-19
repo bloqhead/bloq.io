@@ -12,17 +12,17 @@
         <title id="logoTitle">Daryn St. Pierre - Front-End Web Developer</title>
         <desc id="logoDesc">A logo that is comprised of code brackets wrapped around a skateboard.</desc>
         <style>
-  .path {
-    fill: none;
-    stroke: #f54768;
-    stroke-width: 14;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
-  }
-  .wheel {
-    fill: #f54768;
-  }
+        .path {
+          fill: none;
+          stroke: #f54768;
+          stroke-width: 14;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-miterlimit: 10;
+        }
+        .wheel {
+          fill: #f54768;
+        }
         </style>
         <g id="skateboard" transform="matrix(1, 0, 0, 1, -150, -160)">
           <path id="bracket_right" class="bracket path" d="M370.7 371.4l72-72-72-72" />
@@ -106,12 +106,17 @@
 </template>
 
 <script>
+import anime from 'animejs'
+
 export default {
   data() {
     return {
       isActive: false,
       isExpanded: false
     };
+  },
+  mounted() {
+    this.animate()
   },
   methods: {
     toggleState() {
@@ -121,6 +126,25 @@ export default {
     restingState() {
       this.isActive = false;
       this.isExpanded = false;
+    },
+    animate() {
+
+      const tl = anime.timeline({
+        easing: 'cubicBezier(.57,.19,.3,.95)',
+        duration: 550
+      })
+
+      tl.add({
+        targets: '#logo',
+        opacity: 1,
+        scale: 1
+      })
+
+      tl.add({
+        targets: 'svg g#skateboard path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        delay: anime.stagger(250)
+      }, '+=250')
     }
   }
 };
