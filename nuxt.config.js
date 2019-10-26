@@ -146,11 +146,14 @@ module.exports = {
     color: "#8bd76b"
   },
   build: {
-    postcss: [
-      require("autoprefixer")({
+    postcss: {
+      autoprefixer: {
         grid: true
-      })
-    ],
+      },
+      "postcss-clean": {
+        benchmark: true
+      }
+    },
     vendor: ["axios"]
   },
   srcDir: "client/",
