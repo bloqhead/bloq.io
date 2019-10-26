@@ -1,6 +1,6 @@
-# [bloq.io](https://bloq.io)
+# [daryn.codes](https://daryn.codes)
 
-This is the source for [my website](https://bloq.io/). It is built in [VueJS](https://vuejs.org/) and [Nuxt](https://nuxtjs.org/), and hosted on [Zeit Now](https://zeit.co/now).
+This is the source for [my website](https://daryn.codes/). It is built in [VueJS](https://vuejs.org/) and [Nuxt](https://nuxtjs.org/), and hosted on [Zeit Now](https://zeit.co/now).
 
 ## Running
 
