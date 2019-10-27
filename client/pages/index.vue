@@ -13,7 +13,7 @@
       <p>
         My name is
         <span itemprop="givenName">Daryn</span> and I build
-        <nuxt-link to="/work/">websites</nuxt-link>in sunny St. Petersburg Florida. I like to experiment on
+        <nuxt-link to="/work/">websites</nuxt-link>&nbsp;in sunny St. Petersburg Florida. I like to experiment on
         <a
           href="https://codepen.io/bloqhead"
         >Codepen</a> and have been featured on the front page multiple times, as well as in
@@ -89,8 +89,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content:
-          "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
+        content: "Daryn St. Pierre is a Front-End Web Developer based in St. Petersburg Florida."
       }
     ]
   },
