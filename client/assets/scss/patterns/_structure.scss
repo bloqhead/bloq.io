@@ -17,18 +17,19 @@ html {
 
 body {
   min-height: 100vh;
-  color: white;
+  color: #eee;
   font-weight: normal;
   line-height: 2;
   font-family: $open-sans;
   background-color: black;
   background-image: url($topography);
   background-attachment: fixed;
+  @include cleartext;
 
   $min_width: 320px;
   $max_width: 1140px;
-  $min_font: 13px;
-  $max_font: 16px;
+  $min_font: 14px;
+  $max_font: 18px;
   // $max_font: 18px;
 
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
