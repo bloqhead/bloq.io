@@ -24,7 +24,7 @@
     "hoek": "^5.0.3",
     "markdown-it-highlightjs": "^3.0.0",
     "nodemailer": "^4.6.8",
-    "npm": "^6.1.0",
+    "npm": "^6.13.4",
     "nuxt": "^2.10.2",
     "nuxt-fontawesome": "^0.4.0",
     "nuxt-rfg-icon": "^0.4.3",
